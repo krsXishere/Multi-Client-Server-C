@@ -52,14 +52,12 @@ build cmake_object_order_depends_target_server_multi_client: phony || .
 build CMakeFiles/server_multi_client.dir/main.c.o: C_COMPILER__server_multi_client_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/main.c || cmake_object_order_depends_target_server_multi_client
   DEP_FILE = CMakeFiles/server_multi_client.dir/main.c.o.d
   FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
-  INCLUDES = -I/opt/homebrew/Cellar/cjson/1.7.18/include
   OBJECT_DIR = CMakeFiles/server_multi_client.dir
   OBJECT_FILE_DIR = CMakeFiles/server_multi_client.dir
 
 build CMakeFiles/server_multi_client.dir/body/server.c.o: C_COMPILER__server_multi_client_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/body/server.c || cmake_object_order_depends_target_server_multi_client
   DEP_FILE = CMakeFiles/server_multi_client.dir/body/server.c.o.d
   FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
-  INCLUDES = -I/opt/homebrew/Cellar/cjson/1.7.18/include
   OBJECT_DIR = CMakeFiles/server_multi_client.dir
   OBJECT_FILE_DIR = CMakeFiles/server_multi_client.dir/body
 
@@ -73,8 +71,6 @@ build CMakeFiles/server_multi_client.dir/body/server.c.o: C_COMPILER__server_mul
 
 build server_multi_client: C_EXECUTABLE_LINKER__server_multi_client_Debug CMakeFiles/server_multi_client.dir/main.c.o CMakeFiles/server_multi_client.dir/body/server.c.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
-  LINK_LIBRARIES = -Wl,-rpath,/opt/homebrew/Cellar/cjson/1.7.18/lib  -lcjson
-  LINK_PATH = -L/opt/homebrew/Cellar/cjson/1.7.18/lib
   OBJECT_DIR = CMakeFiles/server_multi_client.dir
   POST_BUILD = :
   PRE_LINK = :

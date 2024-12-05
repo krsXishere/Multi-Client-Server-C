@@ -1,9 +1,7 @@
 # ninja log v6
-190	296	1733373709907458143	server_multi_client	3815d1efc9b49a8c
-3	190	1733373709719584776	CMakeFiles/server_multi_client.dir/main.c.o	effe8ed374f6c9e4
-3	223	1733374197248307492	CMakeFiles/server_multi_client.dir/main.c.o	effe8ed374f6c9e4
-5	214	1733374426086579251	CMakeFiles/server_multi_client.dir/main.c.o	effe8ed374f6c9e4
-2	60	1733374441158651509	CMakeFiles/server_multi_client.dir/body/server.c.o	7f97b48a62f015f
-60	191	1733374441216400816	server_multi_client	84c785f319241b03
-11	190	1733374507435645030	CMakeFiles/server_multi_client.dir/main.c.o	effe8ed374f6c9e4
 190	300	1733374507615015064	server_multi_client	84c785f319241b03
+11	190	1733374507435645030	CMakeFiles/server_multi_client.dir/main.c.o	effe8ed374f6c9e4
+2	60	1733374441158651509	CMakeFiles/server_multi_client.dir/body/server.c.o	7f97b48a62f015f
+3	180	1733374881079724761	CMakeFiles/server_multi_client.dir/main.c.o	1a9e02909e57841
+4	181	1733374881080452418	CMakeFiles/server_multi_client.dir/body/server.c.o	bcc262233cc362ea
+181	308	1733374881258092675	server_multi_client	39e0c79c62095fc4
