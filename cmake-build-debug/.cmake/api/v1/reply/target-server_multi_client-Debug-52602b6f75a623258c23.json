@@ -10,10 +10,7 @@
 	{
 		"commands" : 
 		[
-			"add_executable",
-			"link_directories",
-			"target_link_libraries",
-			"include_directories"
+			"add_executable"
 		],
 		"files" : 
 		[
@@ -27,25 +24,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 10,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 8,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 15,
-				"parent" : 0
-			},
-			{
-				"command" : 3,
-				"file" : 0,
-				"line" : 7,
+				"line" : 6,
 				"parent" : 0
 			}
 		]
@@ -57,13 +36,6 @@
 			[
 				{
 					"fragment" : "-g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics"
-				}
-			],
-			"includes" : 
-			[
-				{
-					"backtrace" : 4,
-					"path" : "/opt/homebrew/Cellar/cjson/1.7.18/include"
 				}
 			],
 			"language" : "C",
@@ -94,20 +66,6 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
-			},
-			{
-				"backtrace" : 2,
-				"fragment" : "-L/opt/homebrew/Cellar/cjson/1.7.18/lib",
-				"role" : "libraryPath"
-			},
-			{
-				"fragment" : "-Wl,-rpath,/opt/homebrew/Cellar/cjson/1.7.18/lib",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 3,
-				"fragment" : "-lcjson",
-				"role" : "libraries"
 			}
 		],
 		"language" : "C"
