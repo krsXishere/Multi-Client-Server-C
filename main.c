@@ -1,7 +1,8 @@
 //
-// Created by Krisna Purnama on 05/12/24.
+// Created by Krisna Purnama on 02/12/24.
 //
 #include "header/server.h"
+#include "body/server.c"
 
 // Fungsi utama untuk memanggil semua modul yang diperlukan
 int main() {

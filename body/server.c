@@ -9,7 +9,6 @@
 #include <sys/socket.h>
 #include <sys/select.h>
 #include "../header/server.h"
-
 #include <sys/errno.h>
 
 // Implementasi fungsi untuk mengirim pesan JSON

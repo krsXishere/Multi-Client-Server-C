@@ -23,6 +23,7 @@ Bahasa Pemrograman C: Bahasa C dipilih karena memiliki kemampuan yang sangat bai
 ## Tech Stack:
 - Clion: sebagai IDE
 - Executable C - C11: sebagai compiler
+- Cmake: sistem build otomatis yang digunakan untuk mengonfigurasi
 
 ## Dokumentasi Laporan Akhir
 [Dokumentasi laporan akhir berupa DOCX](https://polbanacid-my.sharepoint.com/:w:/g/personal/krisna_purnama_tif423_polban_ac_id/EXRQoBDp63xKh5stfz2aMcMBHmN0EncPL9scXJdXwmr9Aw?e=kV03U2)
