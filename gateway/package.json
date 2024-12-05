@@ -1,0 +1,15 @@
+{
+  "name": "gateway",
+  "version": "1.0.0",
+  "description": "Gateway for TCP and WebSocket communication",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "author": "Krisna Purnama",
+  "license": "MIT",
+  "keywords": []
+}
