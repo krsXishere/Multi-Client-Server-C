@@ -25,7 +25,7 @@ void send_json_message(int client_socket, const char *message) {
         }
     }
 
-    snprintf(response, sizeof(response), "{\"status\":\"success\",\"message\":\"%s\"}", sanitized_message);
+    snprintf(response, sizeof(response), "{\"status\":\"success\",\"message\":\"%s\"}\n", sanitized_message);
     send(client_socket, response, strlen(response), 0);
 }
 
