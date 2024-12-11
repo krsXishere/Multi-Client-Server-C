@@ -1,13 +1,25 @@
-const net = require('net');
+const fs = require('fs');
+const https = require('https');
 const WebSocket = require('ws');
+const net = require('net');
 
 const tcpServerHost = '127.0.0.1';
 const tcpServerPort = 8080;
 
-const wss = new WebSocket.Server({ port: 3000 });
+// Muat sertifikat dan kunci privat
+const serverOptions = {
+    cert: fs.readFileSync('cert.pem'), // Path ke file sertifikat
+    key: fs.readFileSync('key.pem')   // Path ke file private key
+};
+
+// Buat HTTPS server
+const httpsServer = https.createServer(serverOptions);
+
+// Buat WebSocket server yang menggunakan HTTPS
+const wss = new WebSocket.Server({ server: httpsServer });
 
 wss.on('connection', (ws) => {
-    console.log('WebSocket client connected');
+    console.log('Secure WebSocket client connected');
 
     // Hubungkan ke server TCP
     const tcpClient = new net.Socket();
@@ -32,4 +44,7 @@ wss.on('connection', (ws) => {
     tcpClient.on('close', () => console.log('TCP connection closed'));
 });
 
-console.log('WebSocket server running on ws://localhost:3000');
+// HTTPS server listen pada port tertentu
+httpsServer.listen(3000, () => {
+    console.log('Secure WebSocket server running on wss://localhost:3000');
+});
