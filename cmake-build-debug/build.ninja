@@ -47,17 +47,19 @@ cmake_ninja_workdir = /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operas
 #############################################
 # Order-only phony target for server_multi_client
 
-build cmake_object_order_depends_target_server_multi_client: phony || .
+build cmake_object_order_depends_target_server_multi_client: phony || cmake_object_order_depends_target_jansson
 
 build CMakeFiles/server_multi_client.dir/main.c.o: C_COMPILER__server_multi_client_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/main.c || cmake_object_order_depends_target_server_multi_client
   DEP_FILE = CMakeFiles/server_multi_client.dir/main.c.o.d
   FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/src
   OBJECT_DIR = CMakeFiles/server_multi_client.dir
   OBJECT_FILE_DIR = CMakeFiles/server_multi_client.dir
 
 build CMakeFiles/server_multi_client.dir/body/server.c.o: C_COMPILER__server_multi_client_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/body/server.c || cmake_object_order_depends_target_server_multi_client
   DEP_FILE = CMakeFiles/server_multi_client.dir/body/server.c.o.d
   FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/src
   OBJECT_DIR = CMakeFiles/server_multi_client.dir
   OBJECT_FILE_DIR = CMakeFiles/server_multi_client.dir/body
 
@@ -69,8 +71,9 @@ build CMakeFiles/server_multi_client.dir/body/server.c.o: C_COMPILER__server_mul
 #############################################
 # Link the executable server_multi_client
 
-build server_multi_client: C_EXECUTABLE_LINKER__server_multi_client_Debug CMakeFiles/server_multi_client.dir/main.c.o CMakeFiles/server_multi_client.dir/body/server.c.o
+build server_multi_client: C_EXECUTABLE_LINKER__server_multi_client_Debug CMakeFiles/server_multi_client.dir/main.c.o CMakeFiles/server_multi_client.dir/body/server.c.o | /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib/libcurl.tbd extern/jansson/lib/libjansson.a || extern/jansson/lib/libjansson.a
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
+  LINK_LIBRARIES = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib/libcurl.tbd  extern/jansson/lib/libjansson.a
   OBJECT_DIR = CMakeFiles/server_multi_client.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -100,8 +103,953 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target jansson
+
+
+#############################################
+# Order-only phony target for jansson
+
+build cmake_object_order_depends_target_jansson: phony || .
+
+build extern/jansson/CMakeFiles/jansson.dir/src/dtoa.c.o: C_COMPILER__jansson_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/src/dtoa.c || cmake_object_order_depends_target_jansson
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/jansson.dir/src/dtoa.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fPIC -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/jansson.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/jansson.dir/src
+
+build extern/jansson/CMakeFiles/jansson.dir/src/dump.c.o: C_COMPILER__jansson_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/src/dump.c || cmake_object_order_depends_target_jansson
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/jansson.dir/src/dump.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fPIC -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/jansson.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/jansson.dir/src
+
+build extern/jansson/CMakeFiles/jansson.dir/src/error.c.o: C_COMPILER__jansson_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/src/error.c || cmake_object_order_depends_target_jansson
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/jansson.dir/src/error.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fPIC -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/jansson.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/jansson.dir/src
+
+build extern/jansson/CMakeFiles/jansson.dir/src/hashtable.c.o: C_COMPILER__jansson_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/src/hashtable.c || cmake_object_order_depends_target_jansson
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/jansson.dir/src/hashtable.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fPIC -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/jansson.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/jansson.dir/src
+
+build extern/jansson/CMakeFiles/jansson.dir/src/hashtable_seed.c.o: C_COMPILER__jansson_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/src/hashtable_seed.c || cmake_object_order_depends_target_jansson
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/jansson.dir/src/hashtable_seed.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fPIC -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/jansson.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/jansson.dir/src
+
+build extern/jansson/CMakeFiles/jansson.dir/src/load.c.o: C_COMPILER__jansson_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/src/load.c || cmake_object_order_depends_target_jansson
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/jansson.dir/src/load.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fPIC -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/jansson.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/jansson.dir/src
+
+build extern/jansson/CMakeFiles/jansson.dir/src/memory.c.o: C_COMPILER__jansson_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/src/memory.c || cmake_object_order_depends_target_jansson
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/jansson.dir/src/memory.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fPIC -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/jansson.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/jansson.dir/src
+
+build extern/jansson/CMakeFiles/jansson.dir/src/pack_unpack.c.o: C_COMPILER__jansson_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/src/pack_unpack.c || cmake_object_order_depends_target_jansson
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/jansson.dir/src/pack_unpack.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fPIC -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/jansson.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/jansson.dir/src
+
+build extern/jansson/CMakeFiles/jansson.dir/src/strbuffer.c.o: C_COMPILER__jansson_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/src/strbuffer.c || cmake_object_order_depends_target_jansson
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/jansson.dir/src/strbuffer.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fPIC -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/jansson.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/jansson.dir/src
+
+build extern/jansson/CMakeFiles/jansson.dir/src/strconv.c.o: C_COMPILER__jansson_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/src/strconv.c || cmake_object_order_depends_target_jansson
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/jansson.dir/src/strconv.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fPIC -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/jansson.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/jansson.dir/src
+
+build extern/jansson/CMakeFiles/jansson.dir/src/utf.c.o: C_COMPILER__jansson_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/src/utf.c || cmake_object_order_depends_target_jansson
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/jansson.dir/src/utf.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fPIC -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/jansson.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/jansson.dir/src
+
+build extern/jansson/CMakeFiles/jansson.dir/src/value.c.o: C_COMPILER__jansson_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/src/value.c || cmake_object_order_depends_target_jansson
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/jansson.dir/src/value.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fPIC -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/jansson.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/jansson.dir/src
+
+build extern/jansson/CMakeFiles/jansson.dir/src/version.c.o: C_COMPILER__jansson_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/src/version.c || cmake_object_order_depends_target_jansson
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/jansson.dir/src/version.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fPIC -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/jansson.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/jansson.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target jansson
+
+
+#############################################
+# Link the static library extern/jansson/lib/libjansson.a
+
+build extern/jansson/lib/libjansson.a: C_STATIC_LIBRARY_LINKER__jansson_Debug extern/jansson/CMakeFiles/jansson.dir/src/dtoa.c.o extern/jansson/CMakeFiles/jansson.dir/src/dump.c.o extern/jansson/CMakeFiles/jansson.dir/src/error.c.o extern/jansson/CMakeFiles/jansson.dir/src/hashtable.c.o extern/jansson/CMakeFiles/jansson.dir/src/hashtable_seed.c.o extern/jansson/CMakeFiles/jansson.dir/src/load.c.o extern/jansson/CMakeFiles/jansson.dir/src/memory.c.o extern/jansson/CMakeFiles/jansson.dir/src/pack_unpack.c.o extern/jansson/CMakeFiles/jansson.dir/src/strbuffer.c.o extern/jansson/CMakeFiles/jansson.dir/src/strconv.c.o extern/jansson/CMakeFiles/jansson.dir/src/utf.c.o extern/jansson/CMakeFiles/jansson.dir/src/value.c.o extern/jansson/CMakeFiles/jansson.dir/src/version.c.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = extern/jansson/CMakeFiles/jansson.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = extern/jansson/lib/libjansson.a
+  TARGET_PDB = jansson.a.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target simple_parse
+
+
+#############################################
+# Order-only phony target for simple_parse
+
+build cmake_object_order_depends_target_simple_parse: phony || cmake_object_order_depends_target_jansson
+
+build extern/jansson/CMakeFiles/simple_parse.dir/examples/simple_parse.c.o: C_COMPILER__simple_parse_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/examples/simple_parse.c || cmake_object_order_depends_target_simple_parse
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/simple_parse.dir/examples/simple_parse.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/simple_parse.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/simple_parse.dir/examples
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target simple_parse
+
+
+#############################################
+# Link the executable extern/jansson/bin/simple_parse
+
+build extern/jansson/bin/simple_parse: C_EXECUTABLE_LINKER__simple_parse_Debug extern/jansson/CMakeFiles/simple_parse.dir/examples/simple_parse.c.o | extern/jansson/lib/libjansson.a || extern/jansson/lib/libjansson.a
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
+  LINK_LIBRARIES = extern/jansson/lib/libjansson.a
+  OBJECT_DIR = extern/jansson/CMakeFiles/simple_parse.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = extern/jansson/bin/simple_parse
+  TARGET_PDB = simple_parse.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_array
+
+
+#############################################
+# Order-only phony target for test_array
+
+build cmake_object_order_depends_target_test_array: phony || cmake_object_order_depends_target_jansson
+
+build extern/jansson/CMakeFiles/test_array.dir/test/suites/api/test_array.c.o: C_COMPILER__test_array_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/test/suites/api/test_array.c || cmake_object_order_depends_target_test_array
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/test_array.dir/test/suites/api/test_array.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_array.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/test_array.dir/test/suites/api
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_array
+
+
+#############################################
+# Link the executable extern/jansson/bin/test_array
+
+build extern/jansson/bin/test_array: C_EXECUTABLE_LINKER__test_array_Debug extern/jansson/CMakeFiles/test_array.dir/test/suites/api/test_array.c.o | extern/jansson/lib/libjansson.a || extern/jansson/lib/libjansson.a
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
+  LINK_LIBRARIES = extern/jansson/lib/libjansson.a
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_array.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = extern/jansson/bin/test_array
+  TARGET_PDB = test_array.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_chaos
+
+
+#############################################
+# Order-only phony target for test_chaos
+
+build cmake_object_order_depends_target_test_chaos: phony || cmake_object_order_depends_target_jansson
+
+build extern/jansson/CMakeFiles/test_chaos.dir/test/suites/api/test_chaos.c.o: C_COMPILER__test_chaos_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/test/suites/api/test_chaos.c || cmake_object_order_depends_target_test_chaos
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/test_chaos.dir/test/suites/api/test_chaos.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_chaos.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/test_chaos.dir/test/suites/api
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_chaos
+
+
+#############################################
+# Link the executable extern/jansson/bin/test_chaos
+
+build extern/jansson/bin/test_chaos: C_EXECUTABLE_LINKER__test_chaos_Debug extern/jansson/CMakeFiles/test_chaos.dir/test/suites/api/test_chaos.c.o | extern/jansson/lib/libjansson.a || extern/jansson/lib/libjansson.a
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
+  LINK_LIBRARIES = extern/jansson/lib/libjansson.a
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_chaos.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = extern/jansson/bin/test_chaos
+  TARGET_PDB = test_chaos.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_copy
+
+
+#############################################
+# Order-only phony target for test_copy
+
+build cmake_object_order_depends_target_test_copy: phony || cmake_object_order_depends_target_jansson
+
+build extern/jansson/CMakeFiles/test_copy.dir/test/suites/api/test_copy.c.o: C_COMPILER__test_copy_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/test/suites/api/test_copy.c || cmake_object_order_depends_target_test_copy
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/test_copy.dir/test/suites/api/test_copy.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_copy.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/test_copy.dir/test/suites/api
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_copy
+
+
+#############################################
+# Link the executable extern/jansson/bin/test_copy
+
+build extern/jansson/bin/test_copy: C_EXECUTABLE_LINKER__test_copy_Debug extern/jansson/CMakeFiles/test_copy.dir/test/suites/api/test_copy.c.o | extern/jansson/lib/libjansson.a || extern/jansson/lib/libjansson.a
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
+  LINK_LIBRARIES = extern/jansson/lib/libjansson.a
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_copy.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = extern/jansson/bin/test_copy
+  TARGET_PDB = test_copy.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_dump
+
+
+#############################################
+# Order-only phony target for test_dump
+
+build cmake_object_order_depends_target_test_dump: phony || cmake_object_order_depends_target_jansson
+
+build extern/jansson/CMakeFiles/test_dump.dir/test/suites/api/test_dump.c.o: C_COMPILER__test_dump_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/test/suites/api/test_dump.c || cmake_object_order_depends_target_test_dump
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/test_dump.dir/test/suites/api/test_dump.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_dump.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/test_dump.dir/test/suites/api
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_dump
+
+
+#############################################
+# Link the executable extern/jansson/bin/test_dump
+
+build extern/jansson/bin/test_dump: C_EXECUTABLE_LINKER__test_dump_Debug extern/jansson/CMakeFiles/test_dump.dir/test/suites/api/test_dump.c.o | extern/jansson/lib/libjansson.a || extern/jansson/lib/libjansson.a
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
+  LINK_LIBRARIES = extern/jansson/lib/libjansson.a
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_dump.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = extern/jansson/bin/test_dump
+  TARGET_PDB = test_dump.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_dump_callback
+
+
+#############################################
+# Order-only phony target for test_dump_callback
+
+build cmake_object_order_depends_target_test_dump_callback: phony || cmake_object_order_depends_target_jansson
+
+build extern/jansson/CMakeFiles/test_dump_callback.dir/test/suites/api/test_dump_callback.c.o: C_COMPILER__test_dump_callback_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/test/suites/api/test_dump_callback.c || cmake_object_order_depends_target_test_dump_callback
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/test_dump_callback.dir/test/suites/api/test_dump_callback.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_dump_callback.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/test_dump_callback.dir/test/suites/api
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_dump_callback
+
+
+#############################################
+# Link the executable extern/jansson/bin/test_dump_callback
+
+build extern/jansson/bin/test_dump_callback: C_EXECUTABLE_LINKER__test_dump_callback_Debug extern/jansson/CMakeFiles/test_dump_callback.dir/test/suites/api/test_dump_callback.c.o | extern/jansson/lib/libjansson.a || extern/jansson/lib/libjansson.a
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
+  LINK_LIBRARIES = extern/jansson/lib/libjansson.a
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_dump_callback.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = extern/jansson/bin/test_dump_callback
+  TARGET_PDB = test_dump_callback.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_equal
+
+
+#############################################
+# Order-only phony target for test_equal
+
+build cmake_object_order_depends_target_test_equal: phony || cmake_object_order_depends_target_jansson
+
+build extern/jansson/CMakeFiles/test_equal.dir/test/suites/api/test_equal.c.o: C_COMPILER__test_equal_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/test/suites/api/test_equal.c || cmake_object_order_depends_target_test_equal
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/test_equal.dir/test/suites/api/test_equal.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_equal.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/test_equal.dir/test/suites/api
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_equal
+
+
+#############################################
+# Link the executable extern/jansson/bin/test_equal
+
+build extern/jansson/bin/test_equal: C_EXECUTABLE_LINKER__test_equal_Debug extern/jansson/CMakeFiles/test_equal.dir/test/suites/api/test_equal.c.o | extern/jansson/lib/libjansson.a || extern/jansson/lib/libjansson.a
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
+  LINK_LIBRARIES = extern/jansson/lib/libjansson.a
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_equal.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = extern/jansson/bin/test_equal
+  TARGET_PDB = test_equal.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_fixed_size
+
+
+#############################################
+# Order-only phony target for test_fixed_size
+
+build cmake_object_order_depends_target_test_fixed_size: phony || cmake_object_order_depends_target_jansson
+
+build extern/jansson/CMakeFiles/test_fixed_size.dir/test/suites/api/test_fixed_size.c.o: C_COMPILER__test_fixed_size_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/test/suites/api/test_fixed_size.c || cmake_object_order_depends_target_test_fixed_size
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/test_fixed_size.dir/test/suites/api/test_fixed_size.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_fixed_size.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/test_fixed_size.dir/test/suites/api
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_fixed_size
+
+
+#############################################
+# Link the executable extern/jansson/bin/test_fixed_size
+
+build extern/jansson/bin/test_fixed_size: C_EXECUTABLE_LINKER__test_fixed_size_Debug extern/jansson/CMakeFiles/test_fixed_size.dir/test/suites/api/test_fixed_size.c.o | extern/jansson/lib/libjansson.a || extern/jansson/lib/libjansson.a
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
+  LINK_LIBRARIES = extern/jansson/lib/libjansson.a
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_fixed_size.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = extern/jansson/bin/test_fixed_size
+  TARGET_PDB = test_fixed_size.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_load
+
+
+#############################################
+# Order-only phony target for test_load
+
+build cmake_object_order_depends_target_test_load: phony || cmake_object_order_depends_target_jansson
+
+build extern/jansson/CMakeFiles/test_load.dir/test/suites/api/test_load.c.o: C_COMPILER__test_load_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/test/suites/api/test_load.c || cmake_object_order_depends_target_test_load
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/test_load.dir/test/suites/api/test_load.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_load.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/test_load.dir/test/suites/api
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_load
+
+
+#############################################
+# Link the executable extern/jansson/bin/test_load
+
+build extern/jansson/bin/test_load: C_EXECUTABLE_LINKER__test_load_Debug extern/jansson/CMakeFiles/test_load.dir/test/suites/api/test_load.c.o | extern/jansson/lib/libjansson.a || extern/jansson/lib/libjansson.a
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
+  LINK_LIBRARIES = extern/jansson/lib/libjansson.a
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_load.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = extern/jansson/bin/test_load
+  TARGET_PDB = test_load.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_load_callback
+
+
+#############################################
+# Order-only phony target for test_load_callback
+
+build cmake_object_order_depends_target_test_load_callback: phony || cmake_object_order_depends_target_jansson
+
+build extern/jansson/CMakeFiles/test_load_callback.dir/test/suites/api/test_load_callback.c.o: C_COMPILER__test_load_callback_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/test/suites/api/test_load_callback.c || cmake_object_order_depends_target_test_load_callback
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/test_load_callback.dir/test/suites/api/test_load_callback.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_load_callback.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/test_load_callback.dir/test/suites/api
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_load_callback
+
+
+#############################################
+# Link the executable extern/jansson/bin/test_load_callback
+
+build extern/jansson/bin/test_load_callback: C_EXECUTABLE_LINKER__test_load_callback_Debug extern/jansson/CMakeFiles/test_load_callback.dir/test/suites/api/test_load_callback.c.o | extern/jansson/lib/libjansson.a || extern/jansson/lib/libjansson.a
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
+  LINK_LIBRARIES = extern/jansson/lib/libjansson.a
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_load_callback.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = extern/jansson/bin/test_load_callback
+  TARGET_PDB = test_load_callback.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_loadb
+
+
+#############################################
+# Order-only phony target for test_loadb
+
+build cmake_object_order_depends_target_test_loadb: phony || cmake_object_order_depends_target_jansson
+
+build extern/jansson/CMakeFiles/test_loadb.dir/test/suites/api/test_loadb.c.o: C_COMPILER__test_loadb_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/test/suites/api/test_loadb.c || cmake_object_order_depends_target_test_loadb
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/test_loadb.dir/test/suites/api/test_loadb.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_loadb.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/test_loadb.dir/test/suites/api
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_loadb
+
+
+#############################################
+# Link the executable extern/jansson/bin/test_loadb
+
+build extern/jansson/bin/test_loadb: C_EXECUTABLE_LINKER__test_loadb_Debug extern/jansson/CMakeFiles/test_loadb.dir/test/suites/api/test_loadb.c.o | extern/jansson/lib/libjansson.a || extern/jansson/lib/libjansson.a
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
+  LINK_LIBRARIES = extern/jansson/lib/libjansson.a
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_loadb.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = extern/jansson/bin/test_loadb
+  TARGET_PDB = test_loadb.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_number
+
+
+#############################################
+# Order-only phony target for test_number
+
+build cmake_object_order_depends_target_test_number: phony || cmake_object_order_depends_target_jansson
+
+build extern/jansson/CMakeFiles/test_number.dir/test/suites/api/test_number.c.o: C_COMPILER__test_number_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/test/suites/api/test_number.c || cmake_object_order_depends_target_test_number
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/test_number.dir/test/suites/api/test_number.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_number.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/test_number.dir/test/suites/api
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_number
+
+
+#############################################
+# Link the executable extern/jansson/bin/test_number
+
+build extern/jansson/bin/test_number: C_EXECUTABLE_LINKER__test_number_Debug extern/jansson/CMakeFiles/test_number.dir/test/suites/api/test_number.c.o | extern/jansson/lib/libjansson.a || extern/jansson/lib/libjansson.a
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
+  LINK_LIBRARIES = extern/jansson/lib/libjansson.a
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_number.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = extern/jansson/bin/test_number
+  TARGET_PDB = test_number.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_object
+
+
+#############################################
+# Order-only phony target for test_object
+
+build cmake_object_order_depends_target_test_object: phony || cmake_object_order_depends_target_jansson
+
+build extern/jansson/CMakeFiles/test_object.dir/test/suites/api/test_object.c.o: C_COMPILER__test_object_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/test/suites/api/test_object.c || cmake_object_order_depends_target_test_object
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/test_object.dir/test/suites/api/test_object.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_object.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/test_object.dir/test/suites/api
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_object
+
+
+#############################################
+# Link the executable extern/jansson/bin/test_object
+
+build extern/jansson/bin/test_object: C_EXECUTABLE_LINKER__test_object_Debug extern/jansson/CMakeFiles/test_object.dir/test/suites/api/test_object.c.o | extern/jansson/lib/libjansson.a || extern/jansson/lib/libjansson.a
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
+  LINK_LIBRARIES = extern/jansson/lib/libjansson.a
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_object.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = extern/jansson/bin/test_object
+  TARGET_PDB = test_object.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_pack
+
+
+#############################################
+# Order-only phony target for test_pack
+
+build cmake_object_order_depends_target_test_pack: phony || cmake_object_order_depends_target_jansson
+
+build extern/jansson/CMakeFiles/test_pack.dir/test/suites/api/test_pack.c.o: C_COMPILER__test_pack_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/test/suites/api/test_pack.c || cmake_object_order_depends_target_test_pack
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/test_pack.dir/test/suites/api/test_pack.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_pack.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/test_pack.dir/test/suites/api
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_pack
+
+
+#############################################
+# Link the executable extern/jansson/bin/test_pack
+
+build extern/jansson/bin/test_pack: C_EXECUTABLE_LINKER__test_pack_Debug extern/jansson/CMakeFiles/test_pack.dir/test/suites/api/test_pack.c.o | extern/jansson/lib/libjansson.a || extern/jansson/lib/libjansson.a
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
+  LINK_LIBRARIES = extern/jansson/lib/libjansson.a
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_pack.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = extern/jansson/bin/test_pack
+  TARGET_PDB = test_pack.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_simple
+
+
+#############################################
+# Order-only phony target for test_simple
+
+build cmake_object_order_depends_target_test_simple: phony || cmake_object_order_depends_target_jansson
+
+build extern/jansson/CMakeFiles/test_simple.dir/test/suites/api/test_simple.c.o: C_COMPILER__test_simple_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/test/suites/api/test_simple.c || cmake_object_order_depends_target_test_simple
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/test_simple.dir/test/suites/api/test_simple.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_simple.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/test_simple.dir/test/suites/api
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_simple
+
+
+#############################################
+# Link the executable extern/jansson/bin/test_simple
+
+build extern/jansson/bin/test_simple: C_EXECUTABLE_LINKER__test_simple_Debug extern/jansson/CMakeFiles/test_simple.dir/test/suites/api/test_simple.c.o | extern/jansson/lib/libjansson.a || extern/jansson/lib/libjansson.a
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
+  LINK_LIBRARIES = extern/jansson/lib/libjansson.a
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_simple.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = extern/jansson/bin/test_simple
+  TARGET_PDB = test_simple.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_sprintf
+
+
+#############################################
+# Order-only phony target for test_sprintf
+
+build cmake_object_order_depends_target_test_sprintf: phony || cmake_object_order_depends_target_jansson
+
+build extern/jansson/CMakeFiles/test_sprintf.dir/test/suites/api/test_sprintf.c.o: C_COMPILER__test_sprintf_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/test/suites/api/test_sprintf.c || cmake_object_order_depends_target_test_sprintf
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/test_sprintf.dir/test/suites/api/test_sprintf.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_sprintf.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/test_sprintf.dir/test/suites/api
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_sprintf
+
+
+#############################################
+# Link the executable extern/jansson/bin/test_sprintf
+
+build extern/jansson/bin/test_sprintf: C_EXECUTABLE_LINKER__test_sprintf_Debug extern/jansson/CMakeFiles/test_sprintf.dir/test/suites/api/test_sprintf.c.o | extern/jansson/lib/libjansson.a || extern/jansson/lib/libjansson.a
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
+  LINK_LIBRARIES = extern/jansson/lib/libjansson.a
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_sprintf.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = extern/jansson/bin/test_sprintf
+  TARGET_PDB = test_sprintf.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_unpack
+
+
+#############################################
+# Order-only phony target for test_unpack
+
+build cmake_object_order_depends_target_test_unpack: phony || cmake_object_order_depends_target_jansson
+
+build extern/jansson/CMakeFiles/test_unpack.dir/test/suites/api/test_unpack.c.o: C_COMPILER__test_unpack_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/test/suites/api/test_unpack.c || cmake_object_order_depends_target_test_unpack
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/test_unpack.dir/test/suites/api/test_unpack.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_unpack.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/test_unpack.dir/test/suites/api
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_unpack
+
+
+#############################################
+# Link the executable extern/jansson/bin/test_unpack
+
+build extern/jansson/bin/test_unpack: C_EXECUTABLE_LINKER__test_unpack_Debug extern/jansson/CMakeFiles/test_unpack.dir/test/suites/api/test_unpack.c.o | extern/jansson/lib/libjansson.a || extern/jansson/lib/libjansson.a
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
+  LINK_LIBRARIES = extern/jansson/lib/libjansson.a
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_unpack.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = extern/jansson/bin/test_unpack
+  TARGET_PDB = test_unpack.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_memory_funcs
+
+
+#############################################
+# Order-only phony target for test_memory_funcs
+
+build cmake_object_order_depends_target_test_memory_funcs: phony || cmake_object_order_depends_target_jansson
+
+build extern/jansson/CMakeFiles/test_memory_funcs.dir/test/suites/api/test_memory_funcs.c.o: C_COMPILER__test_memory_funcs_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/test/suites/api/test_memory_funcs.c || cmake_object_order_depends_target_test_memory_funcs
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/test_memory_funcs.dir/test/suites/api/test_memory_funcs.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_memory_funcs.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/test_memory_funcs.dir/test/suites/api
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_memory_funcs
+
+
+#############################################
+# Link the executable extern/jansson/bin/test_memory_funcs
+
+build extern/jansson/bin/test_memory_funcs: C_EXECUTABLE_LINKER__test_memory_funcs_Debug extern/jansson/CMakeFiles/test_memory_funcs.dir/test/suites/api/test_memory_funcs.c.o | extern/jansson/lib/libjansson.a || extern/jansson/lib/libjansson.a
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
+  LINK_LIBRARIES = extern/jansson/lib/libjansson.a
+  OBJECT_DIR = extern/jansson/CMakeFiles/test_memory_funcs.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = extern/jansson/bin/test_memory_funcs
+  TARGET_PDB = test_memory_funcs.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target json_process
+
+
+#############################################
+# Order-only phony target for json_process
+
+build cmake_object_order_depends_target_json_process: phony || cmake_object_order_depends_target_jansson
+
+build extern/jansson/CMakeFiles/json_process.dir/test/bin/json_process.c.o: C_COMPILER__json_process_unscanned_Debug /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/test/bin/json_process.c || cmake_object_order_depends_target_json_process
+  DEFINES = -DHAVE_CONFIG_H -DJANSSON_USING_CMAKE
+  DEP_FILE = extern/jansson/CMakeFiles/json_process.dir/test/bin/json_process.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/include -I/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson/private_include
+  OBJECT_DIR = extern/jansson/CMakeFiles/json_process.dir
+  OBJECT_FILE_DIR = extern/jansson/CMakeFiles/json_process.dir/test/bin
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target json_process
+
+
+#############################################
+# Link the executable extern/jansson/bin/json_process
+
+build extern/jansson/bin/json_process: C_EXECUTABLE_LINKER__json_process_Debug extern/jansson/CMakeFiles/json_process.dir/test/bin/json_process.c.o | extern/jansson/lib/libjansson.a || extern/jansson/lib/libjansson.a
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
+  LINK_LIBRARIES = extern/jansson/lib/libjansson.a
+  OBJECT_DIR = extern/jansson/CMakeFiles/json_process.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = extern/jansson/bin/json_process
+  TARGET_PDB = json_process.dbg
+
+
+#############################################
+# Utility command for check
+
+build extern/jansson/check: phony extern/jansson/CMakeFiles/check extern/jansson/bin/json_process extern/jansson/bin/test_array extern/jansson/bin/test_chaos extern/jansson/bin/test_copy extern/jansson/bin/test_dump extern/jansson/bin/test_dump_callback extern/jansson/bin/test_equal extern/jansson/bin/test_fixed_size extern/jansson/bin/test_load extern/jansson/bin/test_load_callback extern/jansson/bin/test_loadb extern/jansson/bin/test_memory_funcs extern/jansson/bin/test_number extern/jansson/bin/test_object extern/jansson/bin/test_pack extern/jansson/bin/test_simple extern/jansson/bin/test_sprintf extern/jansson/bin/test_unpack
+
+
+#############################################
+# Utility command for edit_cache
+
+build extern/jansson/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build extern/jansson/edit_cache: phony extern/jansson/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build extern/jansson/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client -B/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build extern/jansson/rebuild_cache: phony extern/jansson/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build extern/jansson/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build extern/jansson/CMakeFiles/install.util: CUSTOM_COMMAND extern/jansson/all
+  COMMAND = cd /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build extern/jansson/install: phony extern/jansson/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build extern/jansson/CMakeFiles/install/local.util: CUSTOM_COMMAND extern/jansson/all
+  COMMAND = cd /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build extern/jansson/install/local: phony extern/jansson/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build extern/jansson/CMakeFiles/install/strip.util: CUSTOM_COMMAND extern/jansson/all
+  COMMAND = cd /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build extern/jansson/install/strip: phony extern/jansson/CMakeFiles/install/strip.util
+
+
+#############################################
+# Custom command for extern/jansson/CMakeFiles/check
+
+build extern/jansson/CMakeFiles/check | ${cmake_ninja_workdir}extern/jansson/CMakeFiles/check: CUSTOM_COMMAND extern/jansson/bin/json_process extern/jansson/bin/test_array extern/jansson/bin/test_chaos extern/jansson/bin/test_copy extern/jansson/bin/test_dump extern/jansson/bin/test_dump_callback extern/jansson/bin/test_equal extern/jansson/bin/test_fixed_size extern/jansson/bin/test_load extern/jansson/bin/test_load_callback extern/jansson/bin/test_loadb extern/jansson/bin/test_number extern/jansson/bin/test_object extern/jansson/bin/test_pack extern/jansson/bin/test_simple extern/jansson/bin/test_sprintf extern/jansson/bin/test_unpack extern/jansson/bin/test_memory_funcs || extern/jansson/bin/json_process extern/jansson/bin/test_array extern/jansson/bin/test_chaos extern/jansson/bin/test_copy extern/jansson/bin/test_dump extern/jansson/bin/test_dump_callback extern/jansson/bin/test_equal extern/jansson/bin/test_fixed_size extern/jansson/bin/test_load extern/jansson/bin/test_load_callback extern/jansson/bin/test_loadb extern/jansson/bin/test_memory_funcs extern/jansson/bin/test_number extern/jansson/bin/test_object extern/jansson/bin/test_pack extern/jansson/bin/test_simple extern/jansson/bin/test_sprintf extern/jansson/bin/test_unpack extern/jansson/lib/libjansson.a
+  COMMAND = cd /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest
+
 # =============================================================================
 # Target aliases.
+
+build check: phony extern/jansson/check
+
+build jansson: phony extern/jansson/lib/libjansson.a
+
+build json_process: phony extern/jansson/bin/json_process
+
+build libjansson.a: phony extern/jansson/lib/libjansson.a
+
+build simple_parse: phony extern/jansson/bin/simple_parse
+
+build test_array: phony extern/jansson/bin/test_array
+
+build test_chaos: phony extern/jansson/bin/test_chaos
+
+build test_copy: phony extern/jansson/bin/test_copy
+
+build test_dump: phony extern/jansson/bin/test_dump
+
+build test_dump_callback: phony extern/jansson/bin/test_dump_callback
+
+build test_equal: phony extern/jansson/bin/test_equal
+
+build test_fixed_size: phony extern/jansson/bin/test_fixed_size
+
+build test_load: phony extern/jansson/bin/test_load
+
+build test_load_callback: phony extern/jansson/bin/test_load_callback
+
+build test_loadb: phony extern/jansson/bin/test_loadb
+
+build test_memory_funcs: phony extern/jansson/bin/test_memory_funcs
+
+build test_number: phony extern/jansson/bin/test_number
+
+build test_object: phony extern/jansson/bin/test_object
+
+build test_pack: phony extern/jansson/bin/test_pack
+
+build test_simple: phony extern/jansson/bin/test_simple
+
+build test_sprintf: phony extern/jansson/bin/test_sprintf
+
+build test_unpack: phony extern/jansson/bin/test_unpack
 
 # =============================================================================
 # Folder targets.
@@ -111,7 +1059,14 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug
 
-build all: phony server_multi_client
+build all: phony server_multi_client extern/jansson/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/extern/jansson
+
+build extern/jansson/all: phony extern/jansson/lib/libjansson.a extern/jansson/bin/simple_parse extern/jansson/bin/test_array extern/jansson/bin/test_chaos extern/jansson/bin/test_copy extern/jansson/bin/test_dump extern/jansson/bin/test_dump_callback extern/jansson/bin/test_equal extern/jansson/bin/test_fixed_size extern/jansson/bin/test_load extern/jansson/bin/test_load_callback extern/jansson/bin/test_loadb extern/jansson/bin/test_number extern/jansson/bin/test_object extern/jansson/bin/test_pack extern/jansson/bin/test_simple extern/jansson/bin/test_sprintf extern/jansson/bin/test_unpack extern/jansson/bin/test_memory_funcs extern/jansson/bin/json_process
 
 # =============================================================================
 # Built-in targets
@@ -120,14 +1075,14 @@ build all: phony server_multi_client
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/BasicConfigVersion-ExactVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckFunctionExists.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckIncludeFile.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckIncludeFileCXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckIncludeFiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/FindCURL.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/FindPkgConfig.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Internal/CheckFlagCommonConfig.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/SelectLibraryConfigurations.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/TestBigEndian.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/WriteBasicConfigVersionFile.cmake /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/CMakeLists.txt /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/CMakeLists.txt /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake/CheckFunctionKeywords.cmake /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake/FindSphinx.cmake /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake/janssonConfig.cmake.in /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake/jansson_config.h.cmake /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake/jansson_private_config.h.cmake /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/jansson.pc.in CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake: phony
+build /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/BasicConfigVersion-ExactVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckFunctionExists.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckIncludeFile.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckIncludeFileCXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckIncludeFiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/FindCURL.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/FindPkgConfig.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Internal/CheckFlagCommonConfig.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/SelectLibraryConfigurations.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/TestBigEndian.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/WriteBasicConfigVersionFile.cmake /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/CMakeLists.txt /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/CMakeLists.txt /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake/CheckFunctionKeywords.cmake /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake/FindSphinx.cmake /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake/janssonConfig.cmake.in /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake/jansson_config.h.cmake /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake/jansson_private_config.h.cmake /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/jansson.pc.in CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake: phony
 
 
 #############################################

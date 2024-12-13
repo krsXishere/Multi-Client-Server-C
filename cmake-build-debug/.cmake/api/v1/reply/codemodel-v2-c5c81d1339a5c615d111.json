@@ -1,0 +1,284 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "extern/jansson",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-extern.jansson-Debug-01a71e7a5db840193f4b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "extern/jansson",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "server_multi_client",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "jansson",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "check::@537bc820efacd286fe75",
+					"jsonFile" : "target-check-Debug-559a0716603e490a5d29.json",
+					"name" : "check",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "jansson::@537bc820efacd286fe75",
+					"jsonFile" : "target-jansson-Debug-6497051530ac945dbbab.json",
+					"name" : "jansson",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "json_process::@537bc820efacd286fe75",
+					"jsonFile" : "target-json_process-Debug-9736d7f6aa1037902fe5.json",
+					"name" : "json_process",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "server_multi_client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-server_multi_client-Debug-1b60d5a19793818264c5.json",
+					"name" : "server_multi_client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "simple_parse::@537bc820efacd286fe75",
+					"jsonFile" : "target-simple_parse-Debug-7b87293fd2e1aca8cd31.json",
+					"name" : "simple_parse",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_array::@537bc820efacd286fe75",
+					"jsonFile" : "target-test_array-Debug-6a06fab1403901dd6a91.json",
+					"name" : "test_array",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_chaos::@537bc820efacd286fe75",
+					"jsonFile" : "target-test_chaos-Debug-ede2e2ea8b121d172f9e.json",
+					"name" : "test_chaos",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_copy::@537bc820efacd286fe75",
+					"jsonFile" : "target-test_copy-Debug-962aba7c0141071e6aca.json",
+					"name" : "test_copy",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_dump::@537bc820efacd286fe75",
+					"jsonFile" : "target-test_dump-Debug-acfc109a95795c7b6e54.json",
+					"name" : "test_dump",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_dump_callback::@537bc820efacd286fe75",
+					"jsonFile" : "target-test_dump_callback-Debug-0886f524ddde573e76ac.json",
+					"name" : "test_dump_callback",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_equal::@537bc820efacd286fe75",
+					"jsonFile" : "target-test_equal-Debug-577f18fd8da02cd8f9db.json",
+					"name" : "test_equal",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_fixed_size::@537bc820efacd286fe75",
+					"jsonFile" : "target-test_fixed_size-Debug-ca64cab0ba3fbd6d8e80.json",
+					"name" : "test_fixed_size",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_load::@537bc820efacd286fe75",
+					"jsonFile" : "target-test_load-Debug-1736d0d645c3960806c4.json",
+					"name" : "test_load",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_load_callback::@537bc820efacd286fe75",
+					"jsonFile" : "target-test_load_callback-Debug-f5efce7731a661ee38ee.json",
+					"name" : "test_load_callback",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_loadb::@537bc820efacd286fe75",
+					"jsonFile" : "target-test_loadb-Debug-4b2cf00dad6cb3c3e8c8.json",
+					"name" : "test_loadb",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_memory_funcs::@537bc820efacd286fe75",
+					"jsonFile" : "target-test_memory_funcs-Debug-3ee5731b210929c169ca.json",
+					"name" : "test_memory_funcs",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_number::@537bc820efacd286fe75",
+					"jsonFile" : "target-test_number-Debug-15284b697ba52d0027f0.json",
+					"name" : "test_number",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_object::@537bc820efacd286fe75",
+					"jsonFile" : "target-test_object-Debug-99419e7bd6ebbc6d67ef.json",
+					"name" : "test_object",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_pack::@537bc820efacd286fe75",
+					"jsonFile" : "target-test_pack-Debug-710d9376b5a8f0b9721d.json",
+					"name" : "test_pack",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_simple::@537bc820efacd286fe75",
+					"jsonFile" : "target-test_simple-Debug-27e32a1e34de6b61e227.json",
+					"name" : "test_simple",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_sprintf::@537bc820efacd286fe75",
+					"jsonFile" : "target-test_sprintf-Debug-cedef9da765d53d89bf3.json",
+					"name" : "test_sprintf",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_unpack::@537bc820efacd286fe75",
+					"jsonFile" : "target-test_unpack-Debug-86ca0307704a08a4fca3.json",
+					"name" : "test_unpack",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug",
+		"source" : "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

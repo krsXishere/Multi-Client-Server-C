@@ -1,0 +1,123 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"extern/jansson/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 570,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "test_array::@537bc820efacd286fe75"
+		},
+		{
+			"id" : "test_chaos::@537bc820efacd286fe75"
+		},
+		{
+			"id" : "test_copy::@537bc820efacd286fe75"
+		},
+		{
+			"id" : "test_dump::@537bc820efacd286fe75"
+		},
+		{
+			"id" : "test_dump_callback::@537bc820efacd286fe75"
+		},
+		{
+			"id" : "test_equal::@537bc820efacd286fe75"
+		},
+		{
+			"id" : "test_fixed_size::@537bc820efacd286fe75"
+		},
+		{
+			"id" : "test_load::@537bc820efacd286fe75"
+		},
+		{
+			"id" : "test_load_callback::@537bc820efacd286fe75"
+		},
+		{
+			"id" : "test_loadb::@537bc820efacd286fe75"
+		},
+		{
+			"id" : "test_number::@537bc820efacd286fe75"
+		},
+		{
+			"id" : "test_object::@537bc820efacd286fe75"
+		},
+		{
+			"id" : "test_pack::@537bc820efacd286fe75"
+		},
+		{
+			"id" : "test_simple::@537bc820efacd286fe75"
+		},
+		{
+			"id" : "test_sprintf::@537bc820efacd286fe75"
+		},
+		{
+			"id" : "test_unpack::@537bc820efacd286fe75"
+		},
+		{
+			"id" : "test_memory_funcs::@537bc820efacd286fe75"
+		},
+		{
+			"id" : "json_process::@537bc820efacd286fe75"
+		}
+	],
+	"id" : "check::@537bc820efacd286fe75",
+	"name" : "check",
+	"paths" : 
+	{
+		"build" : "extern/jansson",
+		"source" : "extern/jansson"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extern/jansson/CMakeFiles/check",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extern/jansson/CMakeFiles/check.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

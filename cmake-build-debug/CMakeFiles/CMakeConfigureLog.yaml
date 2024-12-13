@@ -228,3 +228,1476 @@ events:
       LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
       TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.8)
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "extern/jansson/CMakeLists.txt:56 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test HAS_NO_FORMAT_TRUNCATION"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-coJwEf"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-coJwEf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAS_NO_FORMAT_TRUNCATION"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-coJwEf'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_72b6a
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAS_NO_FORMAT_TRUNCATION  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics   -Wno-format-truncation -MD -MT CMakeFiles/cmTC_72b6a.dir/src.c.o -MF CMakeFiles/cmTC_72b6a.dir/src.c.o.d -o CMakeFiles/cmTC_72b6a.dir/src.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-coJwEf/src.c
+        warning: unknown warning option '-Wno-format-truncation' [-Wunknown-warning-option]
+        1 warning generated.
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_72b6a.dir/src.c.o -o cmTC_72b6a   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "extern/jansson/CMakeLists.txt:78 (check_include_files)"
+    checks:
+      - "Looking for include file endian.h"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qIbHM9"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qIbHM9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_ENDIAN_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qIbHM9'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_7bd46
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_7bd46.dir/HAVE_ENDIAN_H.c.o -MF CMakeFiles/cmTC_7bd46.dir/HAVE_ENDIAN_H.c.o.d -o CMakeFiles/cmTC_7bd46.dir/HAVE_ENDIAN_H.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qIbHM9/HAVE_ENDIAN_H.c
+        FAILED: CMakeFiles/cmTC_7bd46.dir/HAVE_ENDIAN_H.c.o 
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_7bd46.dir/HAVE_ENDIAN_H.c.o -MF CMakeFiles/cmTC_7bd46.dir/HAVE_ENDIAN_H.c.o.d -o CMakeFiles/cmTC_7bd46.dir/HAVE_ENDIAN_H.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qIbHM9/HAVE_ENDIAN_H.c
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qIbHM9/HAVE_ENDIAN_H.c:2:10: fatal error: 'endian.h' file not found
+            2 | #include <endian.h>
+              |          ^~~~~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "extern/jansson/CMakeLists.txt:79 (check_include_files)"
+    checks:
+      - "Looking for include file fcntl.h"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MnpBc1"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MnpBc1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_FCNTL_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MnpBc1'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_ea1a6
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_ea1a6.dir/HAVE_FCNTL_H.c.o -MF CMakeFiles/cmTC_ea1a6.dir/HAVE_FCNTL_H.c.o.d -o CMakeFiles/cmTC_ea1a6.dir/HAVE_FCNTL_H.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MnpBc1/HAVE_FCNTL_H.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_ea1a6.dir/HAVE_FCNTL_H.c.o -o cmTC_ea1a6   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "extern/jansson/CMakeLists.txt:80 (check_include_files)"
+    checks:
+      - "Looking for include file sched.h"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-PyGUFd"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-PyGUFd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_SCHED_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-PyGUFd'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_dcb4c
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_dcb4c.dir/HAVE_SCHED_H.c.o -MF CMakeFiles/cmTC_dcb4c.dir/HAVE_SCHED_H.c.o.d -o CMakeFiles/cmTC_dcb4c.dir/HAVE_SCHED_H.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-PyGUFd/HAVE_SCHED_H.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_dcb4c.dir/HAVE_SCHED_H.c.o -o cmTC_dcb4c   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "extern/jansson/CMakeLists.txt:81 (check_include_files)"
+    checks:
+      - "Looking for include file unistd.h"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Dzq1jI"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Dzq1jI"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_UNISTD_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Dzq1jI'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_b5306
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_b5306.dir/HAVE_UNISTD_H.c.o -MF CMakeFiles/cmTC_b5306.dir/HAVE_UNISTD_H.c.o.d -o CMakeFiles/cmTC_b5306.dir/HAVE_UNISTD_H.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Dzq1jI/HAVE_UNISTD_H.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_b5306.dir/HAVE_UNISTD_H.c.o -o cmTC_b5306   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "extern/jansson/CMakeLists.txt:82 (check_include_files)"
+    checks:
+      - "Looking for include file sys/param.h"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ZLWX2V"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ZLWX2V"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_SYS_PARAM_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ZLWX2V'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_85c3a
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_85c3a.dir/HAVE_SYS_PARAM_H.c.o -MF CMakeFiles/cmTC_85c3a.dir/HAVE_SYS_PARAM_H.c.o.d -o CMakeFiles/cmTC_85c3a.dir/HAVE_SYS_PARAM_H.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ZLWX2V/HAVE_SYS_PARAM_H.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_85c3a.dir/HAVE_SYS_PARAM_H.c.o -o cmTC_85c3a   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "extern/jansson/CMakeLists.txt:83 (check_include_files)"
+    checks:
+      - "Looking for include file sys/stat.h"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ulE30v"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ulE30v"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_SYS_STAT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ulE30v'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_a1488
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_a1488.dir/HAVE_SYS_STAT_H.c.o -MF CMakeFiles/cmTC_a1488.dir/HAVE_SYS_STAT_H.c.o.d -o CMakeFiles/cmTC_a1488.dir/HAVE_SYS_STAT_H.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ulE30v/HAVE_SYS_STAT_H.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_a1488.dir/HAVE_SYS_STAT_H.c.o -o cmTC_a1488   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "extern/jansson/CMakeLists.txt:84 (check_include_files)"
+    checks:
+      - "Looking for include file sys/time.h"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Re5blE"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Re5blE"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_SYS_TIME_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Re5blE'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_96234
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_96234.dir/HAVE_SYS_TIME_H.c.o -MF CMakeFiles/cmTC_96234.dir/HAVE_SYS_TIME_H.c.o.d -o CMakeFiles/cmTC_96234.dir/HAVE_SYS_TIME_H.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Re5blE/HAVE_SYS_TIME_H.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_96234.dir/HAVE_SYS_TIME_H.c.o -o cmTC_96234   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "extern/jansson/CMakeLists.txt:85 (check_include_files)"
+    checks:
+      - "Looking for include file sys/types.h"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-HH4CKM"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-HH4CKM"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-HH4CKM'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_f5ff4
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_f5ff4.dir/HAVE_SYS_TYPES_H.c.o -MF CMakeFiles/cmTC_f5ff4.dir/HAVE_SYS_TYPES_H.c.o.d -o CMakeFiles/cmTC_f5ff4.dir/HAVE_SYS_TYPES_H.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-HH4CKM/HAVE_SYS_TYPES_H.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_f5ff4.dir/HAVE_SYS_TYPES_H.c.o -o cmTC_f5ff4   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "extern/jansson/CMakeLists.txt:87 (check_function_exists)"
+    checks:
+      - "Looking for close"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-G9A1pd"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-G9A1pd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_CLOSE"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-G9A1pd'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_b3844
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=close -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_b3844.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_b3844.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_b3844.dir/CheckFunctionExists.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-G9A1pd/CheckFunctionExists.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DCHECK_FUNCTION_EXISTS=close -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_b3844.dir/CheckFunctionExists.c.o -o cmTC_b3844   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "extern/jansson/CMakeLists.txt:88 (check_function_exists)"
+    checks:
+      - "Looking for getpid"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-iRjxFr"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-iRjxFr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_GETPID"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-iRjxFr'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_12e91
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getpid -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_12e91.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_12e91.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_12e91.dir/CheckFunctionExists.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-iRjxFr/CheckFunctionExists.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DCHECK_FUNCTION_EXISTS=getpid -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_12e91.dir/CheckFunctionExists.c.o -o cmTC_12e91   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "extern/jansson/CMakeLists.txt:89 (check_function_exists)"
+    checks:
+      - "Looking for gettimeofday"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Vwo6aj"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Vwo6aj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_GETTIMEOFDAY"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Vwo6aj'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_c793d
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gettimeofday -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_c793d.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_c793d.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_c793d.dir/CheckFunctionExists.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Vwo6aj/CheckFunctionExists.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DCHECK_FUNCTION_EXISTS=gettimeofday -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_c793d.dir/CheckFunctionExists.c.o -o cmTC_c793d   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "extern/jansson/CMakeLists.txt:90 (check_function_exists)"
+    checks:
+      - "Looking for open"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WxDPPt"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WxDPPt"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_OPEN"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WxDPPt'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_350cf
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=open -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_350cf.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_350cf.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_350cf.dir/CheckFunctionExists.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WxDPPt/CheckFunctionExists.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DCHECK_FUNCTION_EXISTS=open -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_350cf.dir/CheckFunctionExists.c.o -o cmTC_350cf   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "extern/jansson/CMakeLists.txt:91 (check_function_exists)"
+    checks:
+      - "Looking for read"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-H0JTjK"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-H0JTjK"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_READ"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-H0JTjK'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_17ee9
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=read -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_17ee9.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_17ee9.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_17ee9.dir/CheckFunctionExists.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-H0JTjK/CheckFunctionExists.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DCHECK_FUNCTION_EXISTS=read -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_17ee9.dir/CheckFunctionExists.c.o -o cmTC_17ee9   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "extern/jansson/CMakeLists.txt:92 (check_function_exists)"
+    checks:
+      - "Looking for sched_yield"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-lk3JFR"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-lk3JFR"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_SCHED_YIELD"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-lk3JFR'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_c154b
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sched_yield -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_c154b.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_c154b.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_c154b.dir/CheckFunctionExists.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-lk3JFR/CheckFunctionExists.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DCHECK_FUNCTION_EXISTS=sched_yield -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_c154b.dir/CheckFunctionExists.c.o -o cmTC_c154b   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "extern/jansson/CMakeLists.txt:95 (check_include_files)"
+    checks:
+      - "Looking for include file stdint.h"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-r57niV"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-r57niV"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-r57niV'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_8006c
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_8006c.dir/HAVE_STDINT_H.c.o -MF CMakeFiles/cmTC_8006c.dir/HAVE_STDINT_H.c.o.d -o CMakeFiles/cmTC_8006c.dir/HAVE_STDINT_H.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-r57niV/HAVE_STDINT_H.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_8006c.dir/HAVE_STDINT_H.c.o -o cmTC_8006c   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:253 (check_include_file)"
+      - "extern/jansson/CMakeLists.txt:101 (check_type_size)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cjYXl3"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cjYXl3"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cjYXl3'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_59a04
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_59a04.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_59a04.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_59a04.dir/CheckIncludeFile.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cjYXl3/CheckIncludeFile.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_59a04.dir/CheckIncludeFile.c.o -o cmTC_59a04   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "extern/jansson/CMakeLists.txt:101 (check_type_size)"
+    checks:
+      - "Check size of __int64"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ogH0WM"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ogH0WM"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE___INT64"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ogH0WM'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_3ff99
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_3ff99.dir/__INT64.c.o -MF CMakeFiles/cmTC_3ff99.dir/__INT64.c.o.d -o CMakeFiles/cmTC_3ff99.dir/__INT64.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ogH0WM/__INT64.c
+        FAILED: CMakeFiles/cmTC_3ff99.dir/__INT64.c.o 
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_3ff99.dir/__INT64.c.o -MF CMakeFiles/cmTC_3ff99.dir/__INT64.c.o.d -o CMakeFiles/cmTC_3ff99.dir/__INT64.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ogH0WM/__INT64.c
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ogH0WM/__INT64.c:29:12: error: use of undeclared identifier '__int64'
+           29 |   ('0' + ((SIZE / 10000)%10)),
+              |            ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ogH0WM/__INT64.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(__int64))
+              |                      ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ogH0WM/__INT64.c:30:12: error: use of undeclared identifier '__int64'
+           30 |   ('0' + ((SIZE / 1000)%10)),
+              |            ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ogH0WM/__INT64.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(__int64))
+              |                      ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ogH0WM/__INT64.c:31:12: error: use of undeclared identifier '__int64'
+           31 |   ('0' + ((SIZE / 100)%10)),
+              |            ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ogH0WM/__INT64.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(__int64))
+              |                      ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ogH0WM/__INT64.c:32:12: error: use of undeclared identifier '__int64'
+           32 |   ('0' + ((SIZE / 10)%10)),
+              |            ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ogH0WM/__INT64.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(__int64))
+              |                      ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ogH0WM/__INT64.c:33:12: error: use of undeclared identifier '__int64'
+           33 |   ('0' +  (SIZE    % 10)),
+              |            ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ogH0WM/__INT64.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(__int64))
+              |                      ^
+        5 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "extern/jansson/CMakeLists.txt:102 (check_type_size)"
+    checks:
+      - "Check size of int64_t"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-YW35Dn"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-YW35Dn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_INT64_T"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-YW35Dn'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_10aee
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_10aee.dir/INT64_T.c.o -MF CMakeFiles/cmTC_10aee.dir/INT64_T.c.o.d -o CMakeFiles/cmTC_10aee.dir/INT64_T.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-YW35Dn/INT64_T.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_10aee.dir/INT64_T.c.o -o cmTC_10aee   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "extern/jansson/CMakeLists.txt:103 (check_type_size)"
+    checks:
+      - "Check size of long long"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-oVcAUa"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-oVcAUa"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_LONG_LONG_INT"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-oVcAUa'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_1a0bd
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_1a0bd.dir/LONG_LONG_INT.c.o -MF CMakeFiles/cmTC_1a0bd.dir/LONG_LONG_INT.c.o.d -o CMakeFiles/cmTC_1a0bd.dir/LONG_LONG_INT.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-oVcAUa/LONG_LONG_INT.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_1a0bd.dir/LONG_LONG_INT.c.o -o cmTC_1a0bd   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "extern/jansson/CMakeLists.txt:106 (check_type_size)"
+    checks:
+      - "Check size of int32_t"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0OIYEo"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0OIYEo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_INT32_T"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0OIYEo'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_77c0b
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_77c0b.dir/INT32_T.c.o -MF CMakeFiles/cmTC_77c0b.dir/INT32_T.c.o.d -o CMakeFiles/cmTC_77c0b.dir/INT32_T.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0OIYEo/INT32_T.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_77c0b.dir/INT32_T.c.o -o cmTC_77c0b   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "extern/jansson/CMakeLists.txt:107 (check_type_size)"
+    checks:
+      - "Check size of __int32"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uWLMF3"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uWLMF3"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE___INT32"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uWLMF3'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_2780d
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_2780d.dir/__INT32.c.o -MF CMakeFiles/cmTC_2780d.dir/__INT32.c.o.d -o CMakeFiles/cmTC_2780d.dir/__INT32.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uWLMF3/__INT32.c
+        FAILED: CMakeFiles/cmTC_2780d.dir/__INT32.c.o 
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_2780d.dir/__INT32.c.o -MF CMakeFiles/cmTC_2780d.dir/__INT32.c.o.d -o CMakeFiles/cmTC_2780d.dir/__INT32.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uWLMF3/__INT32.c
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uWLMF3/__INT32.c:29:12: error: use of undeclared identifier '__int32'
+           29 |   ('0' + ((SIZE / 10000)%10)),
+              |            ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uWLMF3/__INT32.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(__int32))
+              |                      ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uWLMF3/__INT32.c:30:12: error: use of undeclared identifier '__int32'
+           30 |   ('0' + ((SIZE / 1000)%10)),
+              |            ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uWLMF3/__INT32.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(__int32))
+              |                      ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uWLMF3/__INT32.c:31:12: error: use of undeclared identifier '__int32'
+           31 |   ('0' + ((SIZE / 100)%10)),
+              |            ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uWLMF3/__INT32.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(__int32))
+              |                      ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uWLMF3/__INT32.c:32:12: error: use of undeclared identifier '__int32'
+           32 |   ('0' + ((SIZE / 10)%10)),
+              |            ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uWLMF3/__INT32.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(__int32))
+              |                      ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uWLMF3/__INT32.c:33:12: error: use of undeclared identifier '__int32'
+           33 |   ('0' +  (SIZE    % 10)),
+              |            ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uWLMF3/__INT32.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(__int32))
+              |                      ^
+        5 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "extern/jansson/CMakeLists.txt:108 (check_type_size)"
+    checks:
+      - "Check size of long"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3iULtm"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3iULtm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_LONG_INT"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3iULtm'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_be024
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_be024.dir/LONG_INT.c.o -MF CMakeFiles/cmTC_be024.dir/LONG_INT.c.o.d -o CMakeFiles/cmTC_be024.dir/LONG_INT.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3iULtm/LONG_INT.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_be024.dir/LONG_INT.c.o -o cmTC_be024   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "extern/jansson/CMakeLists.txt:109 (check_type_size)"
+    checks:
+      - "Check size of int"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xQWY7d"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xQWY7d"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_INT"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xQWY7d'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_5e00b
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_5e00b.dir/INT.c.o -MF CMakeFiles/cmTC_5e00b.dir/INT.c.o.d -o CMakeFiles/cmTC_5e00b.dir/INT.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xQWY7d/INT.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_5e00b.dir/INT.c.o -o cmTC_5e00b   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "extern/jansson/CMakeLists.txt:122 (check_type_size)"
+    checks:
+      - "Check size of unsigned long"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yGFxa3"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yGFxa3"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_UNSIGNED_LONG_INT"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yGFxa3'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_d709f
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_d709f.dir/UNSIGNED_LONG_INT.c.o -MF CMakeFiles/cmTC_d709f.dir/UNSIGNED_LONG_INT.c.o.d -o CMakeFiles/cmTC_d709f.dir/UNSIGNED_LONG_INT.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yGFxa3/UNSIGNED_LONG_INT.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_d709f.dir/UNSIGNED_LONG_INT.c.o -o cmTC_d709f   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "extern/jansson/CMakeLists.txt:123 (check_type_size)"
+    checks:
+      - "Check size of unsigned int"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LaLHWN"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LaLHWN"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_UNSIGNED_INT"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LaLHWN'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_dfd5f
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_dfd5f.dir/UNSIGNED_INT.c.o -MF CMakeFiles/cmTC_dfd5f.dir/UNSIGNED_INT.c.o.d -o CMakeFiles/cmTC_dfd5f.dir/UNSIGNED_INT.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LaLHWN/UNSIGNED_INT.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_dfd5f.dir/UNSIGNED_INT.c.o -o cmTC_dfd5f   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "extern/jansson/CMakeLists.txt:124 (check_type_size)"
+    checks:
+      - "Check size of unsigned short"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zguZ27"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zguZ27"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_UNSIGNED_SHORT"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zguZ27'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_f2005
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_f2005.dir/UNSIGNED_SHORT.c.o -MF CMakeFiles/cmTC_f2005.dir/UNSIGNED_SHORT.c.o.d -o CMakeFiles/cmTC_f2005.dir/UNSIGNED_SHORT.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zguZ27/UNSIGNED_SHORT.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_f2005.dir/UNSIGNED_SHORT.c.o -o cmTC_f2005   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "extern/jansson/CMakeLists.txt:126 (check_type_size)"
+    checks:
+      - "Check size of uint32_t"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rLsw0S"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rLsw0S"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_UINT32_T"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rLsw0S'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_3e3b3
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_3e3b3.dir/UINT32_T.c.o -MF CMakeFiles/cmTC_3e3b3.dir/UINT32_T.c.o.d -o CMakeFiles/cmTC_3e3b3.dir/UINT32_T.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rLsw0S/UINT32_T.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_3e3b3.dir/UINT32_T.c.o -o cmTC_3e3b3   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "extern/jansson/CMakeLists.txt:127 (check_type_size)"
+    checks:
+      - "Check size of __uint32"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JFeIG5"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JFeIG5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE___UINT32"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JFeIG5'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_9a1ec
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_9a1ec.dir/__UINT32.c.o -MF CMakeFiles/cmTC_9a1ec.dir/__UINT32.c.o.d -o CMakeFiles/cmTC_9a1ec.dir/__UINT32.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JFeIG5/__UINT32.c
+        FAILED: CMakeFiles/cmTC_9a1ec.dir/__UINT32.c.o 
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_9a1ec.dir/__UINT32.c.o -MF CMakeFiles/cmTC_9a1ec.dir/__UINT32.c.o.d -o CMakeFiles/cmTC_9a1ec.dir/__UINT32.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JFeIG5/__UINT32.c
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JFeIG5/__UINT32.c:29:12: error: use of undeclared identifier '__uint32'
+           29 |   ('0' + ((SIZE / 10000)%10)),
+              |            ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JFeIG5/__UINT32.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(__uint32))
+              |                      ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JFeIG5/__UINT32.c:30:12: error: use of undeclared identifier '__uint32'
+           30 |   ('0' + ((SIZE / 1000)%10)),
+              |            ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JFeIG5/__UINT32.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(__uint32))
+              |                      ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JFeIG5/__UINT32.c:31:12: error: use of undeclared identifier '__uint32'
+           31 |   ('0' + ((SIZE / 100)%10)),
+              |            ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JFeIG5/__UINT32.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(__uint32))
+              |                      ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JFeIG5/__UINT32.c:32:12: error: use of undeclared identifier '__uint32'
+           32 |   ('0' + ((SIZE / 10)%10)),
+              |            ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JFeIG5/__UINT32.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(__uint32))
+              |                      ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JFeIG5/__UINT32.c:33:12: error: use of undeclared identifier '__uint32'
+           33 |   ('0' +  (SIZE    % 10)),
+              |            ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JFeIG5/__UINT32.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(__uint32))
+              |                      ^
+        5 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "extern/jansson/CMakeLists.txt:140 (check_type_size)"
+    checks:
+      - "Check size of uint16_t"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ZoW8wr"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ZoW8wr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_UINT16_T"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ZoW8wr'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_c51d7
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_c51d7.dir/UINT16_T.c.o -MF CMakeFiles/cmTC_c51d7.dir/UINT16_T.c.o.d -o CMakeFiles/cmTC_c51d7.dir/UINT16_T.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ZoW8wr/UINT16_T.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_c51d7.dir/UINT16_T.c.o -o cmTC_c51d7   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "extern/jansson/CMakeLists.txt:141 (check_type_size)"
+    checks:
+      - "Check size of __uint16"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NveAYz"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NveAYz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE___UINT16"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NveAYz'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_76d99
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_76d99.dir/__UINT16.c.o -MF CMakeFiles/cmTC_76d99.dir/__UINT16.c.o.d -o CMakeFiles/cmTC_76d99.dir/__UINT16.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NveAYz/__UINT16.c
+        FAILED: CMakeFiles/cmTC_76d99.dir/__UINT16.c.o 
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_76d99.dir/__UINT16.c.o -MF CMakeFiles/cmTC_76d99.dir/__UINT16.c.o.d -o CMakeFiles/cmTC_76d99.dir/__UINT16.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NveAYz/__UINT16.c
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NveAYz/__UINT16.c:29:12: error: use of undeclared identifier '__uint16'
+           29 |   ('0' + ((SIZE / 10000)%10)),
+              |            ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NveAYz/__UINT16.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(__uint16))
+              |                      ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NveAYz/__UINT16.c:30:12: error: use of undeclared identifier '__uint16'
+           30 |   ('0' + ((SIZE / 1000)%10)),
+              |            ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NveAYz/__UINT16.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(__uint16))
+              |                      ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NveAYz/__UINT16.c:31:12: error: use of undeclared identifier '__uint16'
+           31 |   ('0' + ((SIZE / 100)%10)),
+              |            ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NveAYz/__UINT16.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(__uint16))
+              |                      ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NveAYz/__UINT16.c:32:12: error: use of undeclared identifier '__uint16'
+           32 |   ('0' + ((SIZE / 10)%10)),
+              |            ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NveAYz/__UINT16.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(__uint16))
+              |                      ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NveAYz/__UINT16.c:33:12: error: use of undeclared identifier '__uint16'
+           33 |   ('0' +  (SIZE    % 10)),
+              |            ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NveAYz/__UINT16.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(__uint16))
+              |                      ^
+        5 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "extern/jansson/CMakeLists.txt:154 (check_type_size)"
+    checks:
+      - "Check size of uint8_t"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-moqZDw"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-moqZDw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_UINT8_T"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-moqZDw'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_e07b1
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_e07b1.dir/UINT8_T.c.o -MF CMakeFiles/cmTC_e07b1.dir/UINT8_T.c.o.d -o CMakeFiles/cmTC_e07b1.dir/UINT8_T.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-moqZDw/UINT8_T.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_e07b1.dir/UINT8_T.c.o -o cmTC_e07b1   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "extern/jansson/CMakeLists.txt:155 (check_type_size)"
+    checks:
+      - "Check size of __uint8"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2mFiin"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2mFiin"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE___UINT8"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2mFiin'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_215f9
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_215f9.dir/__UINT8.c.o -MF CMakeFiles/cmTC_215f9.dir/__UINT8.c.o.d -o CMakeFiles/cmTC_215f9.dir/__UINT8.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2mFiin/__UINT8.c
+        FAILED: CMakeFiles/cmTC_215f9.dir/__UINT8.c.o 
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_215f9.dir/__UINT8.c.o -MF CMakeFiles/cmTC_215f9.dir/__UINT8.c.o.d -o CMakeFiles/cmTC_215f9.dir/__UINT8.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2mFiin/__UINT8.c
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2mFiin/__UINT8.c:29:12: error: use of undeclared identifier '__uint8'
+           29 |   ('0' + ((SIZE / 10000)%10)),
+              |            ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2mFiin/__UINT8.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(__uint8))
+              |                      ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2mFiin/__UINT8.c:30:12: error: use of undeclared identifier '__uint8'
+           30 |   ('0' + ((SIZE / 1000)%10)),
+              |            ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2mFiin/__UINT8.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(__uint8))
+              |                      ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2mFiin/__UINT8.c:31:12: error: use of undeclared identifier '__uint8'
+           31 |   ('0' + ((SIZE / 100)%10)),
+              |            ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2mFiin/__UINT8.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(__uint8))
+              |                      ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2mFiin/__UINT8.c:32:12: error: use of undeclared identifier '__uint8'
+           32 |   ('0' + ((SIZE / 10)%10)),
+              |            ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2mFiin/__UINT8.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(__uint8))
+              |                      ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2mFiin/__UINT8.c:33:12: error: use of undeclared identifier '__uint8'
+           33 |   ('0' +  (SIZE    % 10)),
+              |            ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2mFiin/__UINT8.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(__uint8))
+              |                      ^
+        5 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "extern/jansson/CMakeLists.txt:165 (check_type_size)"
+    checks:
+      - "Check size of ssize_t"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NcpvTa"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NcpvTa"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_SSIZE_T"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NcpvTa'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_b1d17
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_b1d17.dir/SSIZE_T.c.o -MF CMakeFiles/cmTC_b1d17.dir/SSIZE_T.c.o.d -o CMakeFiles/cmTC_b1d17.dir/SSIZE_T.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NcpvTa/SSIZE_T.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_b1d17.dir/SSIZE_T.c.o -o cmTC_b1d17   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "extern/jansson/CMakeLists.txt:166 (check_type_size)"
+    checks:
+      - "Check size of SSIZE_T"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xeIrFn"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xeIrFn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_UPPERCASE_SSIZE_T"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xeIrFn'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_2723f
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_2723f.dir/UPPERCASE_SSIZE_T.c.o -MF CMakeFiles/cmTC_2723f.dir/UPPERCASE_SSIZE_T.c.o.d -o CMakeFiles/cmTC_2723f.dir/UPPERCASE_SSIZE_T.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xeIrFn/UPPERCASE_SSIZE_T.c
+        FAILED: CMakeFiles/cmTC_2723f.dir/UPPERCASE_SSIZE_T.c.o 
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_2723f.dir/UPPERCASE_SSIZE_T.c.o -MF CMakeFiles/cmTC_2723f.dir/UPPERCASE_SSIZE_T.c.o.d -o CMakeFiles/cmTC_2723f.dir/UPPERCASE_SSIZE_T.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xeIrFn/UPPERCASE_SSIZE_T.c
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xeIrFn/UPPERCASE_SSIZE_T.c:29:12: error: use of undeclared identifier 'SSIZE_T'
+           29 |   ('0' + ((SIZE / 10000)%10)),
+              |            ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xeIrFn/UPPERCASE_SSIZE_T.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(SSIZE_T))
+              |                      ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xeIrFn/UPPERCASE_SSIZE_T.c:30:12: error: use of undeclared identifier 'SSIZE_T'
+           30 |   ('0' + ((SIZE / 1000)%10)),
+              |            ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xeIrFn/UPPERCASE_SSIZE_T.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(SSIZE_T))
+              |                      ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xeIrFn/UPPERCASE_SSIZE_T.c:31:12: error: use of undeclared identifier 'SSIZE_T'
+           31 |   ('0' + ((SIZE / 100)%10)),
+              |            ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xeIrFn/UPPERCASE_SSIZE_T.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(SSIZE_T))
+              |                      ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xeIrFn/UPPERCASE_SSIZE_T.c:32:12: error: use of undeclared identifier 'SSIZE_T'
+           32 |   ('0' + ((SIZE / 10)%10)),
+              |            ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xeIrFn/UPPERCASE_SSIZE_T.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(SSIZE_T))
+              |                      ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xeIrFn/UPPERCASE_SSIZE_T.c:33:12: error: use of undeclared identifier 'SSIZE_T'
+           33 |   ('0' +  (SIZE    % 10)),
+              |            ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xeIrFn/UPPERCASE_SSIZE_T.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(SSIZE_T))
+              |                      ^
+        5 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "extern/jansson/CMakeLists.txt:177 (check_function_exists)"
+    checks:
+      - "Looking for strtoll"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zkNdoL"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zkNdoL"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_STRTOLL"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zkNdoL'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_60fc4
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strtoll -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_60fc4.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_60fc4.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_60fc4.dir/CheckFunctionExists.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zkNdoL/CheckFunctionExists.c
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zkNdoL/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'strtoll' [-Wincompatible-library-redeclaration]
+            7 |   CHECK_FUNCTION_EXISTS(void);
+              |   ^
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+            1 | #define CHECK_FUNCTION_EXISTS strtoll
+              |                               ^
+        /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zkNdoL/CheckFunctionExists.c:7:3: note: 'strtoll' is a builtin with type 'long long (const char *, char **, int)'
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+            1 | #define CHECK_FUNCTION_EXISTS strtoll
+              |                               ^
+        1 warning generated.
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DCHECK_FUNCTION_EXISTS=strtoll -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_60fc4.dir/CheckFunctionExists.c.o -o cmTC_60fc4   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "extern/jansson/CMakeLists.txt:178 (check_function_exists)"
+    checks:
+      - "Looking for strtoq"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zNiFMo"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zNiFMo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_STRTOQ"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zNiFMo'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_99fac
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strtoq -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_99fac.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_99fac.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_99fac.dir/CheckFunctionExists.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zNiFMo/CheckFunctionExists.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DCHECK_FUNCTION_EXISTS=strtoq -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_99fac.dir/CheckFunctionExists.c.o -o cmTC_99fac   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "extern/jansson/CMakeLists.txt:179 (check_function_exists)"
+    checks:
+      - "Looking for _strtoi64"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8JySOy"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8JySOy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE__STRTOI64"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8JySOy'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_6b4d7
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=_strtoi64 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_6b4d7.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_6b4d7.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_6b4d7.dir/CheckFunctionExists.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8JySOy/CheckFunctionExists.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DCHECK_FUNCTION_EXISTS=_strtoi64 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_6b4d7.dir/CheckFunctionExists.c.o -o cmTC_6b4d7   && :
+        FAILED: cmTC_6b4d7 
+        : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DCHECK_FUNCTION_EXISTS=_strtoi64 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_6b4d7.dir/CheckFunctionExists.c.o -o cmTC_6b4d7   && :
+        Undefined symbols for architecture arm64:
+          "__strtoi64", referenced from:
+              _main in CheckFunctionExists.c.o
+        ld: symbol(s) not found for architecture arm64
+        cc: error: linker command failed with exit code 1 (use -v to see invocation)
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "extern/jansson/CMakeLists.txt:224 (check_include_files)"
+    checks:
+      - "Looking for include file locale.h"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-SPLjor"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-SPLjor"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_LOCALE_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-SPLjor'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_1b2b8
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_1b2b8.dir/HAVE_LOCALE_H.c.o -MF CMakeFiles/cmTC_1b2b8.dir/HAVE_LOCALE_H.c.o.d -o CMakeFiles/cmTC_1b2b8.dir/HAVE_LOCALE_H.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-SPLjor/HAVE_LOCALE_H.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_1b2b8.dir/HAVE_LOCALE_H.c.o -o cmTC_1b2b8   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "extern/jansson/CMakeLists.txt:225 (check_function_exists)"
+    checks:
+      - "Looking for setlocale"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vlIepe"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vlIepe"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_SETLOCALE"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vlIepe'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_9b1bb
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=setlocale -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_9b1bb.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_9b1bb.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_9b1bb.dir/CheckFunctionExists.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vlIepe/CheckFunctionExists.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DCHECK_FUNCTION_EXISTS=setlocale -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_9b1bb.dir/CheckFunctionExists.c.o -o cmTC_9b1bb   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "extern/jansson/cmake/CheckFunctionKeywords.cmake:9 (check_c_source_compiles)"
+      - "extern/jansson/CMakeLists.txt:229 (check_function_keywords)"
+    checks:
+      - "Performing Test HAVE_INLINE"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-OPQgEX"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-OPQgEX"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_INLINE"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-OPQgEX'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_ac66e
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE_INLINE  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_ac66e.dir/src.c.o -MF CMakeFiles/cmTC_ac66e.dir/src.c.o.d -o CMakeFiles/cmTC_ac66e.dir/src.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-OPQgEX/src.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_ac66e.dir/src.c.o -o cmTC_ac66e   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "extern/jansson/cmake/CheckFunctionKeywords.cmake:9 (check_c_source_compiles)"
+      - "extern/jansson/CMakeLists.txt:230 (check_function_keywords)"
+    checks:
+      - "Performing Test HAVE___INLINE"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xFzBsT"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xFzBsT"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE___INLINE"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xFzBsT'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_a6752
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE___INLINE  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_a6752.dir/src.c.o -MF CMakeFiles/cmTC_a6752.dir/src.c.o.d -o CMakeFiles/cmTC_a6752.dir/src.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xFzBsT/src.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_a6752.dir/src.c.o -o cmTC_a6752   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "extern/jansson/cmake/CheckFunctionKeywords.cmake:9 (check_c_source_compiles)"
+      - "extern/jansson/CMakeLists.txt:231 (check_function_keywords)"
+    checks:
+      - "Performing Test HAVE___INLINE__"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-G0zgRI"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-G0zgRI"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE___INLINE__"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-G0zgRI'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_98dca
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE___INLINE__  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_98dca.dir/src.c.o -MF CMakeFiles/cmTC_98dca.dir/src.c.o.d -o CMakeFiles/cmTC_98dca.dir/src.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-G0zgRI/src.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_98dca.dir/src.c.o -o cmTC_98dca   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "extern/jansson/CMakeLists.txt:244 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_SYNC_BUILTINS"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6423ES"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6423ES"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_SYNC_BUILTINS"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6423ES'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_b2f8c
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE_SYNC_BUILTINS  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_b2f8c.dir/src.c.o -MF CMakeFiles/cmTC_b2f8c.dir/src.c.o.d -o CMakeFiles/cmTC_b2f8c.dir/src.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6423ES/src.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_b2f8c.dir/src.c.o -o cmTC_b2f8c   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "extern/jansson/CMakeLists.txt:245 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_ATOMIC_BUILTINS"
+    directories:
+      source: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-EMJvRI"
+      binary: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-EMJvRI"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/extern/jansson/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_ATOMIC_BUILTINS"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-EMJvRI'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_60222
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE_ATOMIC_BUILTINS  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_60222.dir/src.c.o -MF CMakeFiles/cmTC_60222.dir/src.c.o.d -o CMakeFiles/cmTC_60222.dir/src.c.o -c /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-EMJvRI/src.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_60222.dir/src.c.o -o cmTC_60222   && :
+        
+      exitCode: 0
+...

@@ -1,4 +1,13 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client -B /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug
--- Configuring done (0.0s)
+C compiler: AppleClang
+-- Could NOT find Sphinx (missing: Sphinx-build_EXECUTABLE Sphinx_VERSION_STRING) 
+CMake Warning at extern/jansson/CMakeLists.txt:370 (message):
+  Sphinx not found.  Cannot generate documentation!
+
+        Set -DJANSSON_BUILD_DOCS=OFF to get rid of this message.
+
+
+-- Found CURL: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib/libcurl.tbd (found version "8.7.1")
+-- Configuring done (0.5s)
 -- Generating done (0.0s)
 -- Build files have been written to: /Users/user/Documents/ikis/kuliah/Semester-3/Sistem-Operasi/Praktik/Tubes/server-multi-client/cmake-build-debug
