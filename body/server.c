@@ -1,178 +1,140 @@
-// //
-// // Created by Krisna Purnama on 05/12/24.
-// //
-// #include <stdio.h>
-// #include <stdlib.h>
-// #include <string.h>
-// #include <unistd.h>
-// #include <arpa/inet.h>
-// #include <sys/socket.h>
-// #include <sys/select.h>
-// #include "../header/server.h"
-// #include <sys/errno.h>
 //
-// // Implementasi fungsi untuk mengirim pesan JSON
-// void send_json_message(int client_socket, const char *message) {
-//     char response[2048];
-//     char sanitized_message[1024];
-//     snprintf(sanitized_message, sizeof(sanitized_message), "%s", message);
+// Created by Krisna Purnama on 05/12/24.
 //
-//     // Hapus karakter newline atau carriage return
-//     for (int i = 0; i < strlen(sanitized_message); i++) {
-//         if (sanitized_message[i] == '\n' || sanitized_message[i] == '\r') {
-//             sanitized_message[i] = 0;
-//             break;
-//         }
-//     }
-//
-//     snprintf(response, sizeof(response), "{\"status\":\"success\",\"message\":\"%s\"}\n", sanitized_message);
-//     send(client_socket, response, strlen(response), 0);
-// }
-//
-// // Inisialisasi server
-// void initialize_server(Server *server) {
-//     server->server_fd = socket(AF_INET, SOCK_STREAM, 0);
-//     if (server->server_fd == 0) {
-//         perror("Socket creation failed");
-//         exit(EXIT_FAILURE);
-//     }
-//
-//     int opt = 1;
-//     setsockopt(server->server_fd, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt));
-//
-//     server->address.sin_family = AF_INET;
-//     server->address.sin_addr.s_addr = INADDR_ANY;
-//     server->address.sin_port = htons(PORT);
-//
-//     if (bind(server->server_fd, (struct sockaddr *)&server->address, sizeof(server->address)) < 0) {
-//         perror("Bind failed");
-//         close(server->server_fd);
-//         exit(EXIT_FAILURE);
-//     }
-//
-//     if (listen(server->server_fd, BACKLOG) < 0) {
-//         perror("Listen failed");
-//         close(server->server_fd);
-//         exit(EXIT_FAILURE);
-//     }
-// }
-//
-// // Jalankan server
-// void run_server(Server *server) {
-//     fd_set readfds;
-//     int max_sd, sd, activity;
-//     int addrlen = sizeof(server->address);
-//     char buffer[1024];
-//
-//     for (int i = 0; i < MAX_CLIENTS; i++) {
-//         server->client_sockets[i] = 0;
-//     }
-//
-//     printf("Listening on port %d\n", PORT);
-//
-//     while (1) {
-//         // Bersihkan set soket
-//         FD_ZERO(&readfds);
-//         FD_SET(server->server_fd, &readfds);
-//         max_sd = server->server_fd;
-//
-//         for (int i = 0; i < MAX_CLIENTS; i++) {
-//             sd = server->client_sockets[i];
-//             if (sd > 0) {
-//                 FD_SET(sd, &readfds);
-//             }
-//             if (sd > max_sd) {
-//                 max_sd = sd;
-//             }
-//         }
-//
-//         // Tunggu aktivitas
-//         activity = select(max_sd + 1, &readfds, NULL, NULL, NULL);
-//         if ((activity < 0) && (errno != EINTR)) {
-//             printf("Select error");
-//         }
-//
-//         // Jika ada koneksi baru
-//         if (FD_ISSET(server->server_fd, &readfds)) {
-//             int new_socket = accept(server->server_fd, (struct sockaddr *)&server->address, (socklen_t*)&addrlen);
-//             if (new_socket < 0) {
-//                 perror("Accept failed");
-//                 exit(EXIT_FAILURE);
-//             }
-//
-//             printf("New connection\n");
-//
-//             for (int i = 0; i < MAX_CLIENTS; i++) {
-//                 if (server->client_sockets[i] == 0) {
-//                     server->client_sockets[i] = new_socket;
-//                     break;
-//                 }
-//             }
-//         }
-//
-//         // Periksa aktivitas pada soket klien
-//         for (int i = 0; i < MAX_CLIENTS; i++) {
-//             sd = server->client_sockets[i];
-//             if (FD_ISSET(sd, &readfds)) {
-//                 int valread;
-//                 if ((valread = read(sd, buffer, 1024)) == 0) {
-//                     // Koneksi ditutup
-//                     getpeername(sd, (struct sockaddr*)&server->address, (socklen_t*)&addrlen);
-//                     printf("Host disconnected\n");
-//                     close(sd);
-//                     server->client_sockets[i] = 0;
-//                 } else {
-//                     buffer[valread] = '\0';
-//                     // Kirim pesan ke semua klien
-//                     for (int j = 0; j < MAX_CLIENTS; j++) {
-//                         if (server->client_sockets[j] != 0 && j != i) {
-//                             send_json_message(server->client_sockets[j], buffer);
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
-
 #include "../header/server.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <signal.h>
 #include <string.h>
+#include <curl/curl.h>
+
+// Fungsi untuk memanggil NVIDIA AI API
+size_t ai_response_callback(void *ptr, size_t size, size_t nmemb, void *userdata) {
+    strncat((char *)userdata, (char *)ptr, size * nmemb);
+    return size * nmemb;
+}
+
+int call_ai_api(const char *input, char *response) {
+    CURL *curl;
+    CURLcode res;
+
+    const char *api_url = "https://integrate.api.nvidia.com/v1/chat/completions";
+    const char *api_key = "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";
+    char json_payload[BUFFER_SIZE];
+
+    snprintf(json_payload, sizeof(json_payload),
+             "{\"model\":\"nvidia/llama-3.1-nemotron-70b-instruct\","
+             "\"messages\":[{\"role\":\"user\",\"content\":\"%s\"}],"
+             "\"temperature\":0.5,\"top_p\":1,\"max_tokens\":1024,\"stream\":false}", input);
+
+    memset(response, 0, BUFFER_SIZE); // Bersihkan response
+
+    curl = curl_easy_init();
+    if (curl) {
+        struct curl_slist *headers = NULL;
+        headers = curl_slist_append(headers, "Content-Type: application/json");
+        char auth_header[BUFFER_SIZE];
+        snprintf(auth_header, sizeof(auth_header), "Authorization: Bearer %s", api_key);
+        headers = curl_slist_append(headers, auth_header);
+
+        curl_easy_setopt(curl, CURLOPT_URL, api_url);
+        curl_easy_setopt(curl, CURLOPT_POSTFIELDS, json_payload);
+        curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
+        curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, ai_response_callback);
+        curl_easy_setopt(curl, CURLOPT_WRITEDATA, response);
+
+        res = curl_easy_perform(curl);
+        curl_slist_free_all(headers);
+        curl_easy_cleanup(curl);
+
+        if (res != CURLE_OK) {
+            fprintf(stderr, "API request failed: %s\n", curl_easy_strerror(res));
+            return -1;
+        }
+        return 0;
+    }
+
+    return -1; // Jika curl gagal diinisialisasi
+}
+
+void sanitize_json_string(const char *input, char *output, size_t max_size) {
+    size_t j = 0; // Indeks untuk output
+    for (size_t i = 0; input[i] != '\0' && j < max_size - 1; i++) {
+        switch (input[i]) {
+            case '\"': // Escape kutip ganda
+                if (j + 2 >= max_size - 1) break;
+            output[j++] = '\\';
+            output[j++] = '\"';
+            break;
+            case '\\': // Escape backslash
+                if (j + 2 >= max_size - 1) break;
+            output[j++] = '\\';
+            output[j++] = '\\';
+            break;
+            case '\n': // Escape newline
+                if (j + 2 >= max_size - 1) break;
+            output[j++] = '\\';
+            output[j++] = 'n';
+            break;
+            case '\r': // Escape carriage return
+                if (j + 2 >= max_size - 1) break;
+            output[j++] = '\\';
+            output[j++] = 'r';
+            break;
+            case '\t': // Escape tab
+                if (j + 2 >= max_size - 1) break;
+            output[j++] = '\\';
+            output[j++] = 't';
+            break;
+            default:
+                output[j++] = input[i];
+        }
+    }
+    output[j] = '\0'; // Tambahkan null terminator
+}
 
 // Fungsi untuk memformat pesan sebagai JSON
-void format_message(const char *input, char *output) {
-    char response[2048];
-    char sanitized_message[1024];
-    snprintf(sanitized_message, sizeof(sanitized_message), "%s", input);
+void format_message(const char *input, char *output, int use_ai) {
+    char ai_response[BUFFER_SIZE];
+    char sanitized_input[BUFFER_SIZE];
 
-    // Hapus karakter newline atau carriage return
-    for (int i = 0; i < strlen(sanitized_message); i++) {
-        if (sanitized_message[i] == '\n' || sanitized_message[i] == '\r') {
-            sanitized_message[i] = 0;
-            break;
+    // Sanitize input untuk memastikan string valid dalam JSON
+    sanitize_json_string(input, sanitized_input, sizeof(sanitized_input));
+
+    if (use_ai) {
+        // Jika AI digunakan, panggil API AI
+        if (call_ai_api(sanitized_input, ai_response) == 0) {
+            // Jika berhasil, gunakan JSON respons AI langsung tanpa wrap string
+            snprintf(output, BUFFER_SIZE, "{\"status\":\"success\",\"message\":%s}\n", ai_response);
+            return;
+        } else {
+            // Tangani jika ada kegagalan pada API AI
+            snprintf(output, BUFFER_SIZE, "{\"status\":\"error\",\"message\":\"AI processing failed\"}\n");
+            return;
         }
     }
 
-    snprintf(output, BUFFER_SIZE, "{\"status\":\"success\",\"message\":\"%s\"}\n", sanitized_message);
+    // Jika tidak menggunakan AI, output hanya berisi pesan input
+    snprintf(output, BUFFER_SIZE, "{\"status\":\"success\",\"message\":\"%s\"}\n", sanitized_input);
 }
 
 // Fungsi untuk menangani komunikasi dengan klien
 void handle_client(int client_socket) {
-    char buffer[BUFFER_SIZE];       // Buffer untuk menerima data dari klien
-    char formatted_message[BUFFER_SIZE]; // Buffer untuk pesan terformat
+    char buffer[BUFFER_SIZE];
+    char formatted_message[BUFFER_SIZE];
     ssize_t valread;
 
     while ((valread = read(client_socket, buffer, sizeof(buffer) - 1)) > 0) {
-        buffer[valread] = '\0'; // Tambahkan null terminator ke string
+        buffer[valread] = '\0';
 
-        // Tampilkan pesan yang diterima
         printf("Message from client: %s\n", buffer);
 
-        // Format pesan ke dalam format JSON
-        format_message(buffer, formatted_message);
+        // Pilih mode pemrosesan: 0 untuk pantulkan pesan, 1 untuk gunakan AI
+        int use_ai = strstr(buffer, "use_ai") != NULL ? 1 : 0;
+
+        // Format pesan sesuai mode
+        format_message(buffer, formatted_message, use_ai);
 
         // Kirim pesan kembali ke klien
         send(client_socket, formatted_message, strlen(formatted_message), 0);
@@ -180,38 +142,32 @@ void handle_client(int client_socket) {
     }
 }
 
-// Fungsi untuk menginisialisasi server dan menangani koneksi klien
+// Fungsi untuk menginisialisasi server
 void init_server() {
     struct sockaddr_in address;
     socklen_t addrlen = sizeof(address);
 
-    // Tangani sinyal anak proses yang selesai (menghindari zombie process)
     signal(SIGCHLD, SIG_IGN);
 
-    // Buat socket server
     int server_fd = socket(AF_INET, SOCK_STREAM, 0);
     if (server_fd == -1) {
         perror("Socket failed");
         exit(EXIT_FAILURE);
     }
 
-    // Atur opsi socket agar dapat segera digunakan kembali setelah ditutup
     int opt = 1;
     setsockopt(server_fd, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt));
 
-    // Konfigurasi alamat dan port server
     address.sin_family = AF_INET;
     address.sin_addr.s_addr = INADDR_ANY;
     address.sin_port = htons(PORT);
 
-    // Bind socket ke alamat dan port
     if (bind(server_fd, (struct sockaddr *)&address, sizeof(address)) < 0) {
         perror("Bind failed");
         close(server_fd);
         exit(EXIT_FAILURE);
     }
 
-    // Mulai mendengarkan koneksi masuk
     if (listen(server_fd, BACKLOG) < 0) {
         perror("Listen failed");
         close(server_fd);
@@ -221,23 +177,21 @@ void init_server() {
     printf("Server is listening on port %d...\n", PORT);
 
     while (1) {
-        // Terima koneksi dari klien
         int client_socket = accept(server_fd, (struct sockaddr *)&address, &addrlen);
         if (client_socket < 0) {
             perror("Accept failed");
             continue;
         }
 
-        // Fork untuk menangani klien secara terpisah
         if (fork() == 0) {
-            close(server_fd); // Tutup server socket di proses anak
-            handle_client(client_socket); // Tangani komunikasi dengan klien
-            close(client_socket); // Tutup socket klien setelah selesai
+            close(server_fd);
+            handle_client(client_socket);
+            close(client_socket);
             exit(0);
         }
 
-        close(client_socket); // Tutup socket klien di proses utama
+        close(client_socket);
     }
 
-    close(server_fd); // Tutup server socket saat server dihentikan
+    close(server_fd);
 }
