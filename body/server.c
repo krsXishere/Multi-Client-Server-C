@@ -20,7 +20,7 @@ int call_ai_api(const char *input, char *response) {
     CURLcode res;
 
     const char *api_url = "https://integrate.api.nvidia.com/v1/chat/completions";
-    const char *api_key = "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";
+    const char *api_key = "";
     char json_payload[BUFFER_SIZE];
 
     snprintf(json_payload, sizeof(json_payload),
