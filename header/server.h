@@ -12,7 +12,7 @@
 #define BUFFER_SIZE 10240   // Ukuran buffer untuk komunikasi
 
 // Deklarasi fungsi
-size_t ai_response_callback(void *ptr, size_t size, size_t nmemb, void *userdata)
+size_t ai_response_callback(void *ptr, size_t size, size_t nmemb, void *userdata);
 void init_server();
 void handle_client(int client_socket);
 void sanitize_json_string(const char *input, char *output, size_t max_size);
