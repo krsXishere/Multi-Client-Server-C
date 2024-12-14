@@ -16,3 +16,6 @@
 353	431	1734098089074723873	extern/jansson/CMakeFiles/jansson.dir/src/utf.c.o	935c3b2e240e506d
 344	434	1734098089065313075	extern/jansson/CMakeFiles/jansson.dir/src/strconv.c.o	5f6824d11bf88f0c
 419	493	1734098089140621668	extern/jansson/CMakeFiles/jansson.dir/src/value.c.o	3dbd18fc27f18e69
+11	256	1734159165446752890	CMakeFiles/server_multi_client.dir/main.c.o	1a9e02909e57841
+12	273	1734159165447776838	CMakeFiles/server_multi_client.dir/body/server.c.o	bcc262233cc362ea
+273	442	1734159165708622915	server_multi_client	985fe262ef4ea914

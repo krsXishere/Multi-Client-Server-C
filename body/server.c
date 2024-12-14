@@ -146,54 +146,66 @@ void handle_client(int client_socket) {
 
 // Fungsi untuk menginisialisasi server
 void init_server() {
-    struct sockaddr_in address;
-    socklen_t addrlen = sizeof(address);
+    struct sockaddr_in address; // Struktur untuk menyimpan informasi alamat server
+    socklen_t addrlen = sizeof(address); // Panjang alamat, digunakan untuk accept()
 
+    // Tangani sinyal anak proses yang selesai (menghindari "zombie process")
     signal(SIGCHLD, SIG_IGN);
 
+    // Membuat socket untuk komunikasi
     int server_fd = socket(AF_INET, SOCK_STREAM, 0);
     if (server_fd == -1) {
-        perror("Socket failed");
-        exit(EXIT_FAILURE);
+        perror("Socket failed"); // Jika pembuatan socket gagal, cetak pesan error
+        exit(EXIT_FAILURE);      // Keluar dengan kode error
     }
 
+    // Konfigurasi socket agar dapat digunakan kembali segera setelah ditutup
     int opt = 1;
     setsockopt(server_fd, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt));
 
-    address.sin_family = AF_INET;
-    address.sin_addr.s_addr = INADDR_ANY;
-    address.sin_port = htons(PORT);
+    // Mengatur properti alamat server
+    address.sin_family = AF_INET;           // Menggunakan IPv4
+    address.sin_addr.s_addr = INADDR_ANY;   // Dengarkan pada semua alamat yang tersedia
+    address.sin_port = htons(PORT);         // Port yang digunakan (dalam format jaringan)
 
+    // Bind socket ke alamat dan port
     if (bind(server_fd, (struct sockaddr *)&address, sizeof(address)) < 0) {
-        perror("Bind failed");
-        close(server_fd);
-        exit(EXIT_FAILURE);
+        perror("Bind failed"); // Jika bind gagal, cetak pesan error
+        close(server_fd);      // Tutup socket sebelum keluar
+        exit(EXIT_FAILURE);    // Keluar dengan kode error
     }
 
+    // Memulai mode "listen" untuk menerima koneksi masuk
     if (listen(server_fd, BACKLOG) < 0) {
-        perror("Listen failed");
-        close(server_fd);
-        exit(EXIT_FAILURE);
+        perror("Listen failed"); // Jika gagal mendengarkan, cetak pesan error
+        close(server_fd);        // Tutup socket sebelum keluar
+        exit(EXIT_FAILURE);      // Keluar dengan kode error
     }
 
+    // Server berhasil masuk ke mode mendengarkan
     printf("Server is listening on port %d...\n", PORT);
 
+    // Loop utama untuk menerima koneksi masuk
     while (1) {
+        // Menerima koneksi dari klien
         int client_socket = accept(server_fd, (struct sockaddr *)&address, &addrlen);
         if (client_socket < 0) {
-            perror("Accept failed");
-            continue;
+            perror("Accept failed"); // Jika accept gagal, cetak pesan error
+            continue;                // Lanjutkan ke iterasi berikutnya
         }
 
-        if (fork() == 0) {
-            close(server_fd);
-            handle_client(client_socket);
-            close(client_socket);
-            exit(0);
+        // Membuat proses baru untuk menangani klien menggunakan fork
+        if (fork() == 0) { // Proses anak
+            close(server_fd);              // Tutup socket server di proses anak
+            handle_client(client_socket);  // Panggil fungsi untuk menangani klien
+            close(client_socket);          // Tutup socket klien setelah selesai
+            exit(0);                       // Proses anak selesai
         }
 
+        // Menutup socket klien di proses utama
         close(client_socket);
     }
 
+    // Menutup server socket saat server dihentikan (tidak akan pernah dicapai dalam loop ini)
     close(server_fd);
 }
