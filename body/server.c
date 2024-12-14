@@ -15,6 +15,7 @@ size_t ai_response_callback(void *ptr, size_t size, size_t nmemb, void *userdata
     return size * nmemb;
 }
 
+//Memanggil api ai nvidia
 int call_ai_api(const char *input, char *response) {
     CURL *curl;
     CURLcode res;
@@ -58,6 +59,7 @@ int call_ai_api(const char *input, char *response) {
     return -1; // Jika curl gagal diinisialisasi
 }
 
+// Melakukan formatting json
 void sanitize_json_string(const char *input, char *output, size_t max_size) {
     size_t j = 0; // Indeks untuk output
     for (size_t i = 0; input[i] != '\0' && j < max_size - 1; i++) {
